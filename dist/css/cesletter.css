@@ -1,0 +1,584 @@
+* {
+  box-sizing: border-box; }
+  *:before {
+    box-sizing: border-box; }
+  *:after {
+    box-sizing: border-box; }
+
+@media (min-width: 650px) {
+  table.dropFirstWhenPrinting tr > th:first-child {
+    display: none; }
+  table.dropFirstWhenPrinting tr > td:first-child {
+    display: none; } }
+
+@media (max-width: 650px) {
+  .float-left {
+    float: none !important; }
+  figure, .caption {
+    margin: 0; }
+  table.dropFirstWhenPrinting tr > th:first-child {
+    display: block; }
+  table.dropFirstWhenPrinting tr > td:first-child {
+    display: block; } }
+
+body {
+  font-family: Roboto, Open Sans, Arial, sans-serif;
+  margin: 40px auto;
+  max-width: 800px;
+  line-height: 29px;
+  font-size: 18px;
+  color: #444;
+  padding: 0 10px;
+  text-rendering: optimizeLegibility; }
+
+h1 {
+  font-weight: normal;
+  line-height: 1.2;
+  color: crimson;
+  font-size: 36px; }
+
+h2 {
+  line-height: 1.2;
+  color: crimson; }
+
+h3 {
+  line-height: 1.2;
+  padding-top: 5em; }
+  h3 > em {
+    font-style: normal;
+    color: crimson; }
+
+.crimson {
+  color: crimson;
+  font-weight: bold; }
+
+.smaller {
+  font-size: smaller; }
+
+header {
+  text-align: center; }
+  header + p + blockquote {
+    text-align: center; }
+  header + blockquote + hr {
+    border-color: transparent; }
+  header strong {
+    color: crimson;
+    font-weight: normal; }
+  header > blockquote {
+    text-align: left; }
+  header > ul {
+    text-align: inherit; }
+  header > hr {
+    border-color: transparent; }
+
+img {
+  max-width: 100%; }
+
+table.responsive + .tableCaption {
+  width: 100%;
+  border-bottom: 1px solid #888888;
+  margin-top: -1em;
+  padding: 0 1em;
+  font-size: 0.75em; }
+
+table.viewOfTheHebrews td {
+  vertical-align: top !important; }
+
+table.placeNamesTable {
+  border: 1px solid #B8CCE4;
+  border-spacing: 0; }
+  table.placeNamesTable th {
+    text-align: center !important;
+    border: 0;
+    border-bottom: 1px solid #B8CCE4; }
+    table.placeNamesTable th:first-child {
+      border-right: 1px solid #B8CCE4; }
+    table.placeNamesTable th:last-child {
+      padding: 1em; }
+  table.placeNamesTable td {
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0; }
+  table.placeNamesTable td:first-child {
+    text-align: right;
+    padding-right: 1em;
+    border-right: 1px solid #B8CCE4; }
+  table.placeNamesTable td:last-child {
+    text-align: left;
+    padding-left: 1em; }
+
+@media (max-width: 780px) {
+  .pictureGroup > p {
+    text-align: center; }
+    .pictureGroup > p img {
+      max-width: 32%; }
+  .pictureGroupFour > p img {
+    max-width: 48%; }
+  .pictureGroupFive > p img {
+    max-width: 48%; } }
+
+@media (min-width: 780px) {
+  body {
+    background-color: #FFFFFD; }
+  article {
+    background-color: white;
+    box-shadow: 0 0 100px 30px white; }
+  .pictureGroup {
+    width: 100%;
+    position: relative;
+    display: block; }
+    .pictureGroup p {
+      margin: 0 !important;
+      position: relative; }
+    .pictureGroup a {
+      position: absolute; }
+    .pictureGroup img {
+      width: 100%;
+      border: 0.25em solid white;
+      box-shadow: 1px 1px 15px -5px black; }
+  .pictureGroupOne {
+    height: 16.75em; }
+    .pictureGroupOne a {
+      left: 32.5%;
+      top: 1em;
+      max-width: 24%;
+      min-width: 23%;
+      max-width: 23%; }
+      .pictureGroupOne a:first-of-type {
+        left: 0;
+        top: 0;
+        max-width: 30%;
+        z-index: 2;
+        min-width: 30%;
+        max-width: 30%; }
+      .pictureGroupOne a:last-of-type {
+        left: auto;
+        right: 0;
+        max-width: 42%;
+        min-width: 42%; }
+  .pictureGroupTwo {
+    margin-top: -3em; }
+    .pictureGroupTwo + p {
+      height: 16.75em; }
+      .pictureGroupTwo + p a {
+        left: 27%;
+        top: 0;
+        min-width: 22%;
+        max-width: 22%; }
+        .pictureGroupTwo + p a:first-of-type {
+          left: 0;
+          top: 10%;
+          min-width: 30%;
+          max-width: 30%; }
+        .pictureGroupTwo + p a:last-of-type {
+          left: 47%;
+          top: -10%;
+          max-width: 21%;
+          min-width: 21%; }
+  .pictureGroupThree {
+    margin-top: -17em; }
+    .pictureGroupThree + p {
+      height: 18em; }
+      .pictureGroupThree + p a {
+        left: 50%;
+        top: 35%;
+        max-width: 17%; }
+        .pictureGroupThree + p a:first-of-type {
+          left: 31%;
+          top: 50%;
+          min-width: 17%;
+          max-width: 17%; }
+        .pictureGroupThree + p a:last-of-type {
+          left: auto;
+          right: 0;
+          top: -7%;
+          min-width: 31%;
+          max-width: 31%; }
+  .pictureGroupFour > p {
+    height: 300px; }
+    .pictureGroupFour > p a:first-of-type {
+      left: 0;
+      top: 70%;
+      width: 25%;
+      z-index: 2; }
+    .pictureGroupFour > p a:last-of-type {
+      left: 15%;
+      width: 65%; }
+  .pictureGroupFive {
+    margin-top: -7em; }
+    .pictureGroupFive + p {
+      height: 460px; }
+      .pictureGroupFive + p a:first-of-type {
+        left: 15%;
+        width: 65%;
+        top: 17%; }
+      .pictureGroupFive + p a:last-of-type {
+        right: 0;
+        top: 0;
+        width: 30%;
+        z-index: 2; } }
+
+@media print {
+  header {
+    padding-top: 15rem; }
+    header > hr:first-of-type {
+      page-break-before: always;
+      padding-top: 5rem; }
+    header > hr:last-of-type {
+      page-break-before: always;
+      padding-top: 13rem; }
+    header + blockquote + hr {
+      page-break-before: always; }
+  a {
+    text-decoration: none; }
+  body {
+    max-width: 400pt;
+    font-size: 12pt;
+    line-height: 20pt;
+    text-rendering: optimizeLegibility; }
+  hr {
+    padding-top: 3rem; }
+  .boxed > img, img.boxed {
+    border: 10px solid white;
+    box-shadow: 1px 1px 15px -5px black;
+    -webkit-print-color-adjust: exact;
+    -webkit-filter: opacity(1); }
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    page-break-inside: avoid;
+    border-spacing: 0;
+    border-collapse: collapse;
+    line-height: 1; }
+    table + .tableCaption {
+      width: calc(100% - 1px) !important;
+      border-bottom: 1px solid #888888;
+      border-left: 1px solid #888888;
+      border-right: 1px solid #888888;
+      margin-top: 0em;
+      padding: 1em 1em 0 !important; }
+    table th {
+      border: 1px solid #888888;
+      padding: 15px 30px;
+      text-align: center !important;
+      font-size: 10pt; }
+    table td {
+      border: 1px solid #888888;
+      padding: 5px;
+      font-size: 10pt; }
+    table.noBorder th {
+      border: 0; }
+    table.noBorder td {
+      border: 0; }
+    table.dropFirstWhenPrinting tr > th:first-child {
+      display: none; }
+    table.dropFirstWhenPrinting tr > td:first-child {
+      display: none; }
+  .mainLetter h1 {
+    padding-top: inherit;
+    page-break-before: always; }
+  #olivercowderydowsing,
+  #usingadowsingrod,
+  #bookofmormongeography,
+  #nbspfacsimilesfromthevoreeplateslds-strangitehomepage,
+  #nbspthebookofthelawofthelordlds-strangitehomepage,
+  #camoraisnearcenterintheabove1808mapofafrica1808mapofafrica,
+  #justanotherapostate\:kinderhookmeme,
+  #justanotherapostate\:moronimeme,
+  #justanotherapostate\:noah-ethermeme,
+  #shakersdancing,
+  #kirtlandohiotemple,
+  #debunkingfairsdebunking,
+  #mormonstoriesinterviewthumbnail,
+  #reconstructedfacsimile,
+  #examplesofanubis,
+  #markhoffmanandchurchleadership,
+  #jamesstrang,
+  #presidentjreubenclark,
+  #josephsmithsgeographybrnortheastunitedstatessoutheastcanada,
+  #warrenjeffsismorecloselyalignedtojosephsmithmormonismthantheldschurchis\.sourcemormoninfographics\:josephsmithvs\.warrnjeffs,
+  #nbspclosestoriginaltotestimonyofwitnessesjosephsmithpapers\:testimonyofeightwitnessesprinterscopy {
+    -webkit-print-color-adjust: exact;
+    -webkit-filter: opacity(1); } }
+
+@media (max-width: 650px) {
+  ul {
+    list-style-position: inside;
+    padding-left: 1em; }
+  ol {
+    list-style-position: inside;
+    padding-left: 1em; }
+  body {
+    text-rendering: auto; } }
+
+.dowsingPictures img:first-child {
+  max-width: 68%; }
+
+.dowsingPictures img:last-child {
+  max-width: 30%; }
+
+/* The Strangite images are meant to be side by side so there is sizing here. */
+.voreeImage img {
+  max-width: 96%;
+  max-height: 28em; }
+
+/* Regular boxes around images */
+#olivercowderydowsing,
+#usingadowsingrod,
+#bookofmormongeography,
+#nbspfacsimilesfromthevoreeplateslds-strangitehomepage,
+#nbspthebookofthelawofthelordlds-strangitehomepage,
+#camoraisnearcenterintheabove1808mapofafrica1808mapofafrica,
+#justanotherapostate\:kinderhookmeme,
+#justanotherapostate\:moronimeme,
+#justanotherapostate\:noah-ethermeme,
+#shakersdancing,
+#kirtlandohiotemple,
+#debunkingfairsdebunking,
+#mormonstoriesinterviewthumbnail,
+#reconstructedfacsimile,
+#examplesofanubis,
+#markhoffmanandchurchleadership,
+#jamesstrang,
+#presidentjreubenclark,
+#josephsmithsgeographybrnortheastunitedstatessoutheastcanada,
+#warrenjeffsismorecloselyalignedtojosephsmithmormonismthantheldschurchis\.sourcemormoninfographics\:josephsmithvs\.warrnjeffs,
+#nbspclosestoriginaltotestimonyofwitnessesjosephsmithpapers\:testimonyofeightwitnessesprinterscopy {
+  border: 10px solid white;
+  box-shadow: 1px 1px 15px -5px black; }
+
+/* Images where there should be no caption */
+#reconstructedfacsimile + figcaption,
+#examplesofanubis + figcaption,
+#markhoffmanandchurchleadership + figcaption,
+#jamesstrang + figcaption,
+#presidentjreubenclark + figcaption,
+#creativecommonslogo + figcaption,
+#creativecommonsbutton + figcaption,
+#bomisaiahcomparison + figcaption,
+#bommalachicomparison + figcaption,
+#bhrobertsquote + figcaption {
+  display: none; }
+
+.jsPapyrus {
+  max-width: 58%; }
+
+.abrahamFacsimile1 {
+  max-width: 40%; }
+
+figure, .caption {
+  text-align: center;
+  position: relative;
+  font-size: 0.75em;
+  text-align: center; }
+  figure > img, .caption > img {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }
+
+.boxed > img, img.boxed {
+  border: 10px solid white;
+  box-shadow: 1px 1px 15px -5px black; }
+
+.centered {
+  text-align: center;
+  position: relative; }
+
+.floatLeft {
+  float: left; }
+
+.floatRight {
+  float: right; }
+
+.clearFix {
+  clear: both; }
+
+.playButton {
+  position: absolute;
+  pointer-events: none;
+  width: 15%;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; }
+  .playButton svg {
+    fill: black; }
+    .playButton svg g {
+      fill: black; }
+  .playButton.white svg {
+    fill: white; }
+    .playButton.white svg g {
+      fill: white; }
+
+.blockEmbed {
+  width: 100%;
+  text-align: center; }
+  .blockEmbed iframe {
+    max-width: 100%; }
+
+.largeLeftMargin {
+  margin-left: 50%; }
+
+@media screen {
+  table.responsive {
+    width: 100%;
+    margin-bottom: 1.5em; }
+    table.responsive + .tableCaption {
+      border-bottom: 2px solid #7B989E; }
+    table.responsive thead {
+      position: absolute;
+      clip: rect(1px 1px 1px 1px);
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 0;
+      border: 0;
+      height: 1px;
+      width: 1px;
+      overflow: hidden; }
+      table.responsive thead th {
+        background-color: #7B989E;
+        border: 1px solid #7B989E;
+        font-weight: normal;
+        text-align: center;
+        color: white; }
+        table.responsive thead th:first-of-type {
+          text-align: left; }
+    table.responsive tbody {
+      display: block;
+      padding: 0;
+      text-align: left;
+      white-space: normal; }
+      table.responsive tbody tr {
+        margin-bottom: 1em;
+        border: 2px solid #7B989E; }
+        table.responsive tbody tr:last-of-type {
+          margin-bottom: 0; }
+      table.responsive tbody th[scope="row"] {
+        background-color: #7B989E;
+        color: white;
+        text-align: left; }
+      table.responsive tbody td {
+        text-align: right; }
+      table.responsive tbody td[data-type=currency] {
+        text-align: right; }
+      table.responsive tbody td[scope="row"]:first-child {
+        background-color: #7B989E;
+        color: white;
+        text-align: left; }
+      table.responsive tbody td[data-title]:before {
+        content: attr(data-title);
+        float: left;
+        font-size: .8em;
+        color: #5E5d52;
+        color: rgba(94, 93, 82, 0.75); }
+    table.responsive tr {
+      display: block;
+      padding: 0;
+      text-align: left;
+      white-space: normal; }
+    table.responsive th {
+      display: block;
+      padding: 0;
+      text-align: left;
+      white-space: normal;
+      padding: .5em;
+      vertical-align: middle; }
+    table.responsive td {
+      display: block;
+      padding: 0;
+      text-align: left;
+      white-space: normal;
+      padding: .5em;
+      vertical-align: middle; }
+    table.responsive tfoot {
+      font-size: .8em;
+      font-style: italic; } }
+
+@media screen and (min-width: 650px) {
+  table.responsive {
+    font-size: .9em; }
+    table.responsive + .tableCaption {
+      border-bottom: 1px solid #888888; }
+    table.responsive thead {
+      position: relative;
+      clip: auto;
+      height: auto;
+      width: auto;
+      overflow: auto; }
+    table.responsive tr {
+      display: table-row; }
+    table.responsive th {
+      display: table-cell;
+      padding: .5em; }
+    table.responsive td {
+      display: table-cell;
+      padding: .5em; }
+    table.responsive tbody {
+      display: table-row-group; }
+      table.responsive tbody tr {
+        display: table-row;
+        border-width: 1px; }
+        table.responsive tbody tr:nth-of-type(even) {
+          background-color: #5E5d52;
+          background-color: rgba(94, 93, 82, 0.1); }
+      table.responsive tbody th[scope="row"] {
+        background-color: transparent;
+        color: #5E5d52;
+        text-align: inherit; }
+      table.responsive tbody td {
+        text-align: center; }
+      table.responsive tbody td[scope="row"]:first-child {
+        background-color: transparent;
+        color: #5E5d52;
+        text-align: inherit; }
+      table.responsive tbody td[data-title]:before {
+        content: none; } }
+
+@media screen and (max-width: 780px) {
+  table.responsive {
+    font-size: 1em; }
+    table.responsive th {
+      padding: .75em .5em; }
+    table.responsive td {
+      padding: .75em .5em; }
+    table.responsive tfoot {
+      font-size: .9em; } }
+
+@media screen and (min-width: 650px) {
+  table.responsive th {
+    padding: .75em .5em; }
+  table.responsive td {
+    padding: .75em .5em; }
+  table.responsive tbody td {
+    border-bottom: 1px solid #888888; }
+  table.responsive tbody td[data-title]:before {
+    font-size: .9em; } }
+
+@media screen and (min-width: 780px) {
+  table.responsive th {
+    padding: .75em; }
+  table.responsive td {
+    padding: .75em; } }
+
+footer > h3 {
+  text-align: center;
+  font-size: 2em; }
+
+footer > blockquote {
+  text-align: center; }
+
+u strong {
+  color: crimson; }
+
+td.checked {
+  color: crimson; }
+  td.checked > * {
+    color: #444; }
+
+#warrenjeffsismorecloselyalignedtojosephsmithmormonismthantheldschurchis\.sourcemormoninfographics\:josephsmithvs\.warrnjeffs + figcaption a {
+  font-size: smaller; }
+
+table.centered {
+  margin: auto; }
