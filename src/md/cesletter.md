@@ -836,7 +836,7 @@ A rock he [found digging in his neighbor's property][LDS Essay: Book of Mormon T
 This thought–provoking video raises some profound questions and challenges to the Latter-day Saint concept of “testimony” and receiving a witness from the Holy Ghost or Spirit as being a unique, reliable, and trustworthy source to discerning truth and reality:
 
 ::: centered
-<div class="playButton" data-type="svg"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 510 510" xml:space="preserve"><g><g class="play-circle-outline"><path d="M204,369.75L357,255L204,140.25V369.75z M255,0C114.75,0,0,114.75,0,255s114.75,255,255,255s255-114.75,255-255 S395.25,0,255,0z M255,459c-112.2,0-204-91.8-204-204S142.8,51,255,51s204,91.8,204,204S367.2,459,255,459z"></path></g></g></svg></div>
+!!!include(playbutton.svg)!!!
 
 [![Follow the Spirit Thumbnail][]][Youtube: Follow the Spirit]<!--{image:.boxed}-->
 :::
@@ -1532,7 +1532,7 @@ Click on graphics below to access each respective response:
 ->Click below to view my interview with Mormon Stories John Dehlin:<-
 
 ::: centered
-<div class="playButton" data-type="svg"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 510 510" xml:space="preserve"><g><g class="play-circle-outline"><path d="M204,369.75L357,255L204,140.25V369.75z M255,0C114.75,0,0,114.75,0,255s114.75,255,255,255s255-114.75,255-255 S395.25,0,255,0z M255,459c-112.2,0-204-91.8-204-204S142.8,51,255,51s204,91.8,204,204S367.2,459,255,459z"></path></g></g></svg></div>
+!!!include(playbutton.svg)!!!
 
 [![Mormon Stories Interview Thumbnail][]][Youtube: Mormon Stories Interview with Jeremy Runnells]<!--{image:.boxed}-->
 :::
