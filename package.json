@@ -1,0 +1,47 @@
+{
+  "name": "cesletter",
+  "version": "1.0.0",
+  "description": "Provides the Letter to a CES Director in a variety of useful formats",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run copy-images && npm run build-css && npm run build-html",
+    "build-css": "node-sass ./src/scss/cesletter.scss ./dist/css/cesletter.css",
+    "build-html": "node ./build.js",
+    "build-js": "mkdir -p ./dist/js; browserify ./src/js/cesletter.js > ./dist/js/cesletter.js",
+    "copy-images": "mkdir -p ./dist/img ; cp src/img/* ./dist/img/",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nocoolnametom/cesletter.git"
+  },
+  "keywords": [
+    "cesletter",
+    "mormon",
+    "lds"
+  ],
+  "author": "Tom Doggett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nocoolnametom/cesletter/issues"
+  },
+  "homepage": "https://github.com/nocoolnametom/cesletter#readme",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "domready": "^1.0.8",
+    "handlebars": "^4.0.5",
+    "markdown-it": "^7.0.0",
+    "markdown-it-block-embed": "0.0.3",
+    "markdown-it-block-image": "0.0.3",
+    "markdown-it-center-text": "^1.0.3",
+    "markdown-it-container": "^2.0.0",
+    "markdown-it-decorate": "^1.2.1",
+    "markdown-it-front-matter": "^0.1.2",
+    "markdown-it-include": "0.0.2",
+    "markdown-it-link-target": "^1.0.1",
+    "markdown-it-sup-alt": "^1.0.2",
+    "mdfigcaption": "^0.1.1",
+    "node-sass": "^3.8.0"
+  }
+}

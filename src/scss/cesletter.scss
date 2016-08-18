@@ -1,0 +1,661 @@
+//colors
+$color_romance_approx: #FFFFFD;
+$white: white;
+$black:  black;
+$color_suva_gray_approx: #888888;
+$color_chicago_approx: #5E5d52;
+$color_chicago_10_approx: rgba(94, 93, 82, 0.1);
+$color_sea_nymph_approx: #7B989E;
+$color_chicago_75_approx: rgba(94, 93, 82, 0.75);
+$color_tundora_approx: #444;
+$crimson: crimson;
+
+//fonts
+$font_0: Roboto;
+$font_1: Open Sans;
+$font_2: Arial;
+$font_3: sans-serif;
+
+//urls
+$url_0: url(../../img/Play_Button.png);
+
+//Media Query Sizes
+$above_full_size: "(min-width: 780px)";
+$below_full_size: "(max-width: 780px)";
+$normal_size: "(min-width: 650px)";
+$small_screen: "(max-width: 650px)";
+
+* {
+  box-sizing: border-box;
+  &:before {
+    box-sizing: border-box;
+  }
+  &:after {
+    box-sizing: border-box;
+  }
+}
+@media #{$normal_size} {
+  table.dropFirstWhenPrinting tr > {
+    th:first-child {
+      display: none;
+    }
+    td:first-child {
+      display: none;
+    }
+  }
+}
+@media #{$small_screen} {
+  .float-left {
+    float: none !important;
+  }
+  figure, .caption {
+    margin: 0;
+  }
+  table.dropFirstWhenPrinting tr > {
+    th:first-child {
+      display: block;
+    }
+    td:first-child {
+      display: block;
+    }
+  }
+}
+body {
+  font-family: $font_0, $font_1, $font_2, $font_3;
+  margin: 40px auto;
+  max-width: 800px;
+  line-height: 29px;
+  font-size: 18px;
+  color: $color_tundora_approx;
+  padding: 0 10px;
+  text-rendering: optimizeLegibility;
+}
+h1 {
+  font-weight: normal;
+  line-height: 1.2;
+  color: $crimson;
+  font-size: 36px;
+}
+h2 {
+  line-height: 1.2;
+  color: $crimson;
+}
+h3 {
+  line-height: 1.2;
+  padding-top: 5em;
+  > em {
+    font-style: normal;
+    color: $crimson;
+  }
+}
+.crimson {
+  color: $crimson;
+  font-weight: bold;
+}
+.smaller {
+  font-size: smaller;
+}
+header {
+  text-align: center;
+  + {
+    p + blockquote {
+      text-align: center;
+    }
+    blockquote + hr {
+      border-color: transparent;
+    }
+  }
+  strong {
+    color: $crimson;
+    font-weight: normal;
+  }
+  > {
+    blockquote {
+      text-align: left;
+    }
+    ul {
+      text-align: inherit;
+    }
+    hr {
+      border-color: transparent;
+    }
+  }
+}
+img {
+  max-width: 100%;
+}
+table.responsive + .tableCaption {
+  width: 100%;
+  border-bottom: 1px solid $color_suva_gray_approx;
+  margin-top: -1em;
+  padding: 0 1em;
+  font-size: 0.75em;
+}
+table.viewOfTheHebrews td {
+  vertical-align: top !important;
+}
+table.placeNamesTable {
+  border: 1px solid #B8CCE4;
+  border-spacing:0;
+  th {
+    text-align: center !important;
+    border: 0;
+    border-bottom: 1px solid #B8CCE4;
+    &:first-child {
+      border-right: 1px solid #B8CCE4;
+    }
+    &:last-child {
+      padding: 1em;
+    }
+  }
+  td {
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+  }
+  td:first-child {
+    text-align: right;
+    padding-right: 1em;
+    border-right: 1px solid #B8CCE4;
+  }
+  td:last-child {
+    text-align: left;
+    padding-left: 1em;
+  }
+}
+@media #{$below_full_size} {
+  .pictureGroup > p {
+    text-align: center;
+    img {
+      max-width: 32%;
+    }
+  }
+  .pictureGroupFour > p img {
+    max-width: 48%;
+  }
+  .pictureGroupFive > p img {
+    max-width: 48%;
+  }
+}
+@media #{$above_full_size} {
+  body {
+    background-color: $color_romance_approx;
+  }
+  article {
+    background-color: $white;
+    box-shadow: 0 0 100px 30px $white;
+  }
+  @import 'book_of_mormon_photo_placement';
+}
+@media print {
+  header {
+    padding-top: 15rem;
+    > hr {
+      &:first-of-type {
+        page-break-before: always;
+        padding-top: 5rem;
+      }
+      &:last-of-type {
+        page-break-before: always;
+        padding-top: 13rem;
+      }
+    }
+    + blockquote + hr {
+      page-break-before: always;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  body {
+    max-width: 400pt;
+    font-size: 12pt;
+    line-height: 20pt;
+    text-rendering: optimizeLegibility;
+  }
+  hr {
+    padding-top: 3rem;
+  }
+  .boxed > img, img.boxed {
+    border: 10px solid $white;
+    box-shadow: 1px 1px 15px -5px $black;
+    -webkit-print-color-adjust:exact;
+    -webkit-filter:opacity(1);
+  }
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    page-break-inside: avoid;
+    border-spacing: 0;
+    border-collapse: collapse;
+    line-height: 1;
+    & + .tableCaption {
+      width: calc(100% - 1px) !important;
+      border-bottom: 1px solid $color_suva_gray_approx;
+      border-left: 1px solid $color_suva_gray_approx;
+      border-right: 1px solid $color_suva_gray_approx;
+      margin-top: 0em;
+      padding: 1em 1em 0 !important;
+    }
+    th {
+      border: 1px solid $color_suva_gray_approx;
+      padding: 15px 30px;
+      text-align: center !important;
+      font-size: 10pt;
+    }
+    td {
+      border: 1px solid $color_suva_gray_approx;
+      padding: 5px;
+      font-size: 10pt;
+    }
+    &.noBorder {
+      th {
+        border: 0;
+      }
+      td {
+        border: 0;
+      }
+    }
+    &.dropFirstWhenPrinting tr > {
+      th:first-child {
+        display: none;
+      }
+      td:first-child {
+        display: none;
+      }
+    }
+  }
+  .mainLetter h1 {
+    padding-top: inherit;
+    page-break-before: always;
+  }
+  #olivercowderydowsing,
+  #usingadowsingrod,
+  #bookofmormongeography,
+  #nbspfacsimilesfromthevoreeplateslds-strangitehomepage,
+  #nbspthebookofthelawofthelordlds-strangitehomepage,
+  #camoraisnearcenterintheabove1808mapofafrica1808mapofafrica,
+  #justanotherapostate\:kinderhookmeme,
+  #justanotherapostate\:moronimeme,
+  #justanotherapostate\:noah-ethermeme,
+  #shakersdancing,
+  #kirtlandohiotemple,
+  #debunkingfairsdebunking,
+  #mormonstoriesinterviewthumbnail,
+  #reconstructedfacsimile,
+  #examplesofanubis,
+  #markhoffmanandchurchleadership,
+  #jamesstrang,
+  #presidentjreubenclark,
+  #josephsmithsgeographybrnortheastunitedstatessoutheastcanada,
+  #warrenjeffsismorecloselyalignedtojosephsmithmormonismthantheldschurchis\.sourcemormoninfographics\:josephsmithvs\.warrnjeffs,
+  #nbspclosestoriginaltotestimonyofwitnessesjosephsmithpapers\:testimonyofeightwitnessesprinterscopy {
+
+    -webkit-print-color-adjust:exact;
+    -webkit-filter:opacity(1);
+  }
+}
+@media #{$small_screen} {
+  ul {
+    list-style-position: inside;
+    padding-left: 1em;
+  }
+  ol {
+    list-style-position: inside;
+    padding-left: 1em;
+  }
+  body {
+    text-rendering: auto;
+  }
+}
+.dowsingPictures img:first-child {
+  max-width: 68%;
+}
+.dowsingPictures img:last-child {
+  max-width: 30%;
+}
+
+/* The Strangite images are meant to be side by side so there is sizing here. */
+.voreeImage img {
+  max-width: 96%;
+  max-height: 28em;
+}
+
+/* Regular boxes around images */
+#olivercowderydowsing,
+#usingadowsingrod,
+#bookofmormongeography,
+#nbspfacsimilesfromthevoreeplateslds-strangitehomepage,
+#nbspthebookofthelawofthelordlds-strangitehomepage,
+#camoraisnearcenterintheabove1808mapofafrica1808mapofafrica,
+#justanotherapostate\:kinderhookmeme,
+#justanotherapostate\:moronimeme,
+#justanotherapostate\:noah-ethermeme,
+#shakersdancing,
+#kirtlandohiotemple,
+#debunkingfairsdebunking,
+#mormonstoriesinterviewthumbnail,
+#reconstructedfacsimile,
+#examplesofanubis,
+#markhoffmanandchurchleadership,
+#jamesstrang,
+#presidentjreubenclark,
+#josephsmithsgeographybrnortheastunitedstatessoutheastcanada,
+#warrenjeffsismorecloselyalignedtojosephsmithmormonismthantheldschurchis\.sourcemormoninfographics\:josephsmithvs\.warrnjeffs,
+#nbspclosestoriginaltotestimonyofwitnessesjosephsmithpapers\:testimonyofeightwitnessesprinterscopy {
+  border: 10px solid $white;
+  box-shadow: 1px 1px 15px -5px $black;
+}
+
+/* Images where there should be no caption */
+#reconstructedfacsimile,
+#examplesofanubis,
+#markhoffmanandchurchleadership,
+#jamesstrang,
+#presidentjreubenclark,
+#creativecommonslogo,
+#creativecommonsbutton,
+#bomisaiahcomparison,
+#bommalachicomparison,
+#bhrobertsquote {
+  + figcaption {
+    display: none;
+  }
+}
+
+.jsPapyrus {
+  max-width: 58%;
+}
+
+.abrahamFacsimile1 {
+  max-width: 40%;
+}
+
+figure, .caption {
+  text-align: center;
+  position: relative;
+  font-size: 0.75em;
+  text-align: center;
+
+  & > img {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+.boxed > img, img.boxed {
+  border: 10px solid $white;
+  box-shadow: 1px 1px 15px -5px $black;
+}
+
+.centered {
+  text-align: center;
+  position: relative;
+}
+
+.floatLeft {
+  float: left;
+}
+.floatRight {
+  float: right;
+}
+.clearFix {
+  clear: both;
+}
+
+.playButton {
+  position: absolute;
+  pointer-events: none;
+  width: 15%;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  svg {
+    fill: black;
+    g {
+      fill: black;
+    }
+  }
+  &.white {
+    svg {
+      fill: white;
+      g {
+        fill: white;
+      }
+    }
+  }
+}
+
+.blockEmbed {
+  width: 100%;
+  text-align: center;
+  & iframe {
+    max-width: 100%;
+  }
+}
+
+.largeLeftMargin {
+  margin-left: 50%;
+}
+
+@media screen {
+  table.responsive {
+    width: 100%;
+    margin-bottom: 1.5em;
+    & + .tableCaption {
+      border-bottom: 2px solid $color_sea_nymph_approx;
+    }
+    thead {
+      position: absolute;
+      clip: rect(1px 1px 1px 1px);
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 0;
+      border: 0;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+      th {
+        background-color: $color_sea_nymph_approx;
+        border: 1px solid $color_sea_nymph_approx;
+        font-weight: normal;
+        text-align: center;
+        color: $white;
+        &:first-of-type {
+          text-align: left;
+        }
+      }
+    }
+    tbody {
+      display: block;
+      padding: 0;
+      text-align: left;
+      white-space: normal;
+      tr {
+        margin-bottom: 1em;
+        border: 2px solid $color_sea_nymph_approx;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+      th[scope="row"] {
+        background-color: $color_sea_nymph_approx;
+        color: $white;
+        text-align: left;
+      }
+      td {
+        text-align: right;
+      }
+      td[data-type=currency] {
+        text-align: right;
+      }
+      td[scope="row"]:first-child {
+        background-color: $color_sea_nymph_approx;
+        color: $white;
+        text-align: left;
+      }
+      td[data-title]:before {
+        content: attr(data-title);
+        float: left;
+        font-size: .8em;
+        color: $color_chicago_approx;
+        color: $color_chicago_75_approx;
+      }
+    }
+    tr {
+      display: block;
+      padding: 0;
+      text-align: left;
+      white-space: normal;
+    }
+    th {
+      display: block;
+      padding: 0;
+      text-align: left;
+      white-space: normal;
+      padding: .5em;
+      vertical-align: middle;
+    }
+    td {
+      display: block;
+      padding: 0;
+      text-align: left;
+      white-space: normal;
+      padding: .5em;
+      vertical-align: middle;
+    }
+    tfoot {
+      font-size: .8em;
+      font-style: italic;
+    }
+  }
+  @media #{$normal_size} {
+    table.responsive {
+      font-size: .9em;
+      & + .tableCaption {
+        border-bottom: 1px solid $color_suva_gray_approx;
+      }
+      thead {
+        position: relative;
+        clip: auto;
+        height: auto;
+        width: auto;
+        overflow: auto;
+      }
+      tr {
+        display: table-row;
+      }
+      th {
+        display: table-cell;
+        padding: .5em;
+      }
+      td {
+        display: table-cell;
+        padding: .5em;
+      }
+      tbody {
+        display: table-row-group;
+        tr {
+          display: table-row;
+          border-width: 1px;
+          &:nth-of-type(even) {
+            background-color: $color_chicago_approx;
+            background-color: $color_chicago_10_approx;
+          }
+        }
+        th[scope="row"] {
+          background-color: transparent;
+          color: $color_chicago_approx;
+          text-align: inherit;
+        }
+        td {
+          text-align: center;
+        }
+        td[scope="row"]:first-child {
+          background-color: transparent;
+          color: $color_chicago_approx;
+          text-align: inherit;
+        }
+        td[data-title]:before {
+          content: none;
+        }
+      }
+    }
+  }
+  @media #{$below_full_size} {
+    table.responsive {
+      font-size: 1em;
+      th {
+        padding: .75em .5em;
+      }
+      td {
+        padding: .75em .5em;
+      }
+      tfoot {
+        font-size: .9em;
+      }
+    }
+  }
+  @media #{$normal_size} {
+    table.responsive {
+      th {
+        padding: .75em .5em;
+      }
+      td {
+        padding: .75em .5em;
+      }
+      tbody {
+        td {
+          border-bottom: 1px solid $color_suva_gray_approx;
+        }
+        td[data-title]:before {
+          font-size: .9em;
+        }
+      }
+    }
+  }
+  @media #{$above_full_size} {
+    table.responsive {
+      th {
+        padding: .75em;
+      }
+      td {
+        padding: .75em;
+      }
+    }
+  }
+}
+
+footer > {
+  h3 {
+    text-align: center;
+    font-size: 2em;
+  }
+  blockquote {
+    text-align: center;
+  }
+}
+
+u strong {
+  color: $crimson;
+}
+
+td.checked {
+  color: $crimson;
+  > * {
+    color: $color_tundora_approx;
+  }
+}
+
+#warrenjeffsismorecloselyalignedtojosephsmithmormonismthantheldschurchis\.sourcemormoninfographics\:josephsmithvs\.warrnjeffs + figcaption a {
+  font-size: smaller;
+}
+
+table.centered {
+  margin: auto;
+}
