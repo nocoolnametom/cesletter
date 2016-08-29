@@ -2,5 +2,6 @@
     "markdownSource": "./src/md/",
     "scssSource": "./src/scss/",
     "htmlSource": "./src/html/",
-    "distribution": "./dist/"
+    "distribution": "./dist/",
+    "offlineStorage": "./dist/local/"
 }

@@ -29,9 +29,13 @@
   "homepage": "https://github.com/nocoolnametom/cesletter#readme",
   "devDependencies": {
     "browserify": "^13.1.0",
+    "crypto": "0.0.3",
     "domready": "^1.0.8",
+    "express": "^4.14.0",
+    "finalhandler": "^0.5.0",
     "handlebars": "^4.0.5",
-    "markdown-it": "^7.0.0",
+    "http": "0.0.0",
+    "markdown-it": "^7.0.1",
     "markdown-it-block-embed": "0.0.3",
     "markdown-it-block-image": "0.0.3",
     "markdown-it-center-text": "^1.0.3",
@@ -42,6 +46,13 @@
     "markdown-it-link-target": "^1.0.1",
     "markdown-it-sup-alt": "^1.0.2",
     "mdfigcaption": "^0.1.1",
-    "node-sass": "^3.8.0"
+    "node-sass": "^3.8.0",
+    "phantom": "^2.1.16",
+    "phantomjs": "^2.1.7",
+    "q": "^1.4.1",
+    "serve-static": "^1.11.1"
+  },
+  "dependencies": {
+    "http-mitm-proxy": "^0.5.1"
   }
 }
