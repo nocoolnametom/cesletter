@@ -35,3 +35,9 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# Man-in-the-middle Proxy settings/cache
+.http-mitm-Proxy
+
+# Offline webpages
+local

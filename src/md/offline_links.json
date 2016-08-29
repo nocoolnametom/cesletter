@@ -1,0 +1,1181 @@
+{
+  "unaltered": [
+    {
+      "name": "Email CES Letter Author",
+      "offlinePath": "mailto:cesletter@gmail.com"
+    },
+    {
+      "name": "Google Map Search: Tecumseh",
+      "offlinePath": "https://www.google.com/maps/preview#!q=tecumseh+ontario+canada"
+    }
+  ],
+  "oneLevelDeepSites": [
+    {
+      "name": "History of the Church 3:232",
+      "offlinePath": "historyofthechurch.html"
+    },
+    {
+      "name": "History of the Church 3:307-308",
+      "offlinePath": "historyofthechurch.html"
+    },
+    {
+      "name": "History of the Church 6:411",
+      "offlinePath": "historyofthechurch.html"
+    }
+  ],
+  "files" : [
+    {
+      "name": "1808 Map of Africa",
+      "offlinePath": "africa_1808.jpg"
+    },
+    {
+      "name": "Article: Ensign Magazine, Oct 2011",
+      "offlinePath": "2011-10-00-ensign-eng.pdf"
+    },
+    {
+      "name": "Article: Messenger and Advocate 1836-12",
+      "overwriteUrl": "http://contentdm.lib.byu.edu/utils/getfile/collection/NCMP1820-1846/id/7338/filename/2449.pdf",
+      "offlinePath": "NCMP1820-1846-id-7338.pdf"
+    },
+    {
+      "name": "Article: The Mantle is Far, Far Greater Than the Intellect",
+      "offlinePath": "the-mantle-is-far-far-greater-than-the-intellect_eng.pdf"
+    },
+    {
+      "name": "Article: Times and Seasons 1842-10-01",
+      "overwriteUrl": "http://contentdm.lib.byu.edu/utils/getfile/collection/NCMP1820-1846/id/9966/filename/5058.pdf",
+      "offlinePath": "5058.pdf"
+    },
+    {
+      "name": "Black Curse Image Link",
+      "offlinePath": "blacks-curse.png"
+    },
+    {
+      "name": "Children's Book of Mormon Scripture Stories",
+      "offlinePath": "2010-12-book-of-mormon-stories-eng.pdf"
+    },
+    {
+      "name": "Children's D&C Scripture Stories",
+      "offlinePath": "CUR_2008___PDF_CompleteDCScriptureStories_31122_eng_.pdf"
+    },
+    {
+      "name": "FAIR: A Tale of Two Marriage Systems",
+      "offlinePath": "katich-a-tale-of-two-marriage-systems.pdf"
+    },
+    {
+      "name": "FAIR: Joseph Smith's History Confirmed",
+      "offlinePath": "ray-joseph-smiths-history-confirmed.pdf"
+    },
+    {
+      "name": "Joseph Smith Papers: Testimony of Eight Witnesses Printer's Copy",
+      "overwriteUrl": "http://pool.fairmormon.org/images/8/8b/Signature_page_from_printer%27s_manuscript.jpg",
+      "offlinePath": "signature_page_from_printers_manuscript.jpg"
+    },
+    {
+      "name": "LDS 2011 Welfare Services Fact Sheet",
+      "offlinePath": "2011-welfare-services-fact-sheet.pdf"
+    },
+    {
+      "name": "LDS Egyptologists and the Book of Abraham",
+      "offlinePath": "boadialogue.pdf"
+    },
+    {
+      "name": "Mormon Parallels, pg.724-772",
+      "offlinePath": "mp193.pdf"
+    },
+    {
+      "name": "TSF Letter",
+      "offlinePath": "bomnevermeetdirtarcheology.gif"
+    },
+     {
+      "name": "Tapir Urine Spray Warning Sign",
+      "offlinePath": "or4uw7n.jpg"
+    },
+    {
+      "name": "Wikipedia: US Declaration of Independence Signatures",
+      "offlinePath": "Us_declaration_independence_signatures.jpg"
+    }
+  ],
+  "prerendered": [
+    {
+      "name": "Article: A Treasured Testament",
+      "moveFromPath": "www.lds.org/ensign/1993/07/a-treasured-testament?lang=eng.html",
+      "offlinePath": "www.lds.org/ensign/1993/07/a-treasured-testament.html"
+    },
+    {
+      "name": "Article: Can Ye Feel So Now",
+      "moveFromPath": "www.lds.org/general-conference/2012/10/can-ye-feel-so-now?lang=eng.html",
+      "offlinePath": "www.lds.org/general-conference/2012/10/can-ye-feel-so-now.html"
+    },
+    {
+      "name": "Article: Joseph Smith, 2014",
+      "moveFromPath": "www.lds.org/general-conference/2014/10/joseph-smith?lang=eng.html",
+      "offlinePath": "www.lds.org/general-conference/2014/10/joseph-smith.html"
+    },
+    {
+      "name": "Article: Our Own Liahona",
+      "moveFromPath": "www.lds.org/general-conference/1976/10/our-own-liahona?lang=eng.html",
+      "offlinePath": "www.lds.org/general-conference/1976/10/our-own-liahona.html"
+    },
+    {
+      "name": "Article: Reading Church History",
+      "overwriteUrl": "http://www.scottwoodward.org/Talks/html/Oaks,%20Dallin%20H/OaksDH_ReadingChurchHistory.html",
+      "offlinePath": "www.scottwoodward.org/Talks/html/Oaks,%20Dallin%20H/OaksDH_ReadingChurchHistory.html"
+    },
+    {
+      "name": "Article: Sacred Transformations",
+      "moveFromPath": "www.lds.org/ensign/2012/12/sacred-transformations?lang=eng.html",
+      "offlinePath": "www.lds.org/ensign/2012/12/sacred-transformations.html"
+    },
+    {
+      "name": "Article: Testimony",
+      "moveFromPath": "www.lds.org/general-conference/2008/04/testimony?lang=eng.html",
+      "offlinePath": "www.lds.org/general-conference/2008/04/testimony.html"
+    },
+    {
+      "name": "Article: The Debate is Over",
+      "moveFromPath": "www.lds.org/ensign/1979/08/the-debate-is-over?lang=eng.html",
+      "offlinePath": "www.lds.org/ensign/1979/08/the-debate-is-over.html"
+    },
+    {
+      "name": "Article: The Joseph Smith III Document",
+      "moveFromPath": "www.lds.org/general-conference/1981/04/the-joseph-smith-iii-document-and-the-keys-of-the-kingdom?lang=eng.html",
+      "offlinePath": "www.lds.org/general-conference/1981/04/the-joseph-smith-iii-document-and-the-keys-of-the-kingdom.html"
+    },
+    {
+      "name": "Article: The Marvelous Foundation of Our Faith",
+      "moveFromPath": "www.lds.org/general-conference/2002/10/the-marvelous-foundation-of-our-faith?lang=eng.html",
+      "offlinePath": "www.lds.org/general-conference/2002/10/the-marvelous-foundation-of-our-faith.html"
+    },
+    {
+      "name": "Article: The Quest for Spiritual Knowledge",
+      "moveFromPath": "www.lds.org/new-era/2007/01/the-quest-for-spiritual-knowledge?lang=eng.html",
+      "offlinePath": "www.lds.org/new-era/2007/01/the-quest-for-spiritual-knowledge.html"
+    },
+    {
+      "name": "Article: The Wentworth Letter",
+      "moveFromPath": "www.lds.org/ensign/2002/07/the-wentworth-letter?lang=eng.html",
+      "offlinePath": "www.lds.org/ensign/2002/07/the-wentworth-letter.html"
+    },
+    {
+      "name": "Broken: Elijah appeared to Joseph in Kirtland Temple",
+      "moveFromPath": "",
+      "offlinePath": "elijah_appeared_to_joseph_in_kirtland_temple.html"
+    },
+    {
+      "name": "Broken: Image Source",
+      "moveFromPath": "",
+      "offlinePath": "translationimagesource.html"
+    },
+    {
+      "name": "FamilySearch: Eliza R. Snow",
+      "offlinePath": "familysearch.org/pal:/MM9.2.1/M18Z-MRT.html"
+    },
+    {
+      "name": "FamilySearch: Helen Mar Kimball",
+      "offlinePath": "familysearch.org/pal:/MM9.2.1/M18K-6J5.html"
+    },
+    {
+      "name": "FamilySearch: Joseph Smith",
+      "offlinePath": "familysearch.org/pal:/MM9.2.1/M18D-5C8.html"
+    },
+    {
+      "name": "FamilySearch: Sarah Ann Whitney",
+      "offlinePath": "familysearch.org/pal:/MM9.2.1/M18Z-MTZ.html"
+    },
+    {
+      "name": "FamilySearch: Zina H. Young",
+      "offlinePath": "familysearch.org/pal:/MM9.2.1/M18Z-MPT.html"
+    },
+    {
+      "name": "Joseph Smith Papers: 1835 D&C 101:4",
+      "overwriteUrl": "http://www.josephsmithpapers.org/paperSummary/doctrine-and-covenants-1835?dm=text&p=259",
+      "moveFromPath": "www.josephsmithpapers.org/paperSummary/doctrine-and-covenants-1835?dm=text&p=259.html",
+      "offlinePath": "www.josephsmithpapers.org/paperSummary/doctrine-and-covenants-1835_259.html"
+    },
+    {
+      "name": "Joseph Smith Papers: 1835 D&C 13:7",
+      "overwriteUrl": "http://www.josephsmithpapers.org/paperSummary/doctrine-and-covenants-1835?dm=text&p=129",
+      "moveFromPath": "www.josephsmithpapers.org/paperSummary/doctrine-and-covenants-1835?dm=text&p=129.html",
+      "offlinePath": "www.josephsmithpapers.org/paperSummary/doctrine-and-covenants-1835_129.html"
+    },
+    {
+      "name": "Joseph Smith Papers: 1835 D&C 65:3",
+      "overwriteUrl": "http://www.josephsmithpapers.org/paperSummary/doctrine-and-covenants-1835?dm=text&p=200",
+      "moveFromPath": "www.josephsmithpapers.org/paperSummary/doctrine-and-covenants-1835?dm=text&p=200.html",
+      "offlinePath": "www.josephsmithpapers.org/paperSummary/doctrine-and-covenants-1835_200.html"
+    },
+    {
+      "name": "Joseph Smith Papers: 1835 D&C",
+      "overwriteUrl": "http://www.josephsmithpapers.org/paperSummary/doctrine-and-covenants-1835?dm=text&p=9",
+      "moveFromPath": "www.josephsmithpapers.org/paperSummary/doctrine-and-covenants-1835?dm=text&p=9.html",
+      "offlinePath": "www.josephsmithpapers.org/paperSummary/doctrine-and-covenants-1835_9.html"
+    },
+    {
+      "name": "Joseph Smith Papers: Book of Commandments 7:3",
+      "overwriteUrl": "http://www.josephsmithpapers.org/paperSummary/book-of-commandments-1833?dm=text&p=23",
+      "moveFromPath": "www.josephsmithpapers.org/paperSummary/book-of-commandments-1833?dm=text&p=23.html",
+      "offlinePath": "www.josephsmithpapers.org/paperSummary/book-of-commandments-1833_23.html"
+    },
+    {
+      "name": "Joseph Smith Papers: Book of Commandments 7",
+      "overwriteUrl": "http://www.josephsmithpapers.org/paperSummary/book-of-commandments-1833?dm=text&p=23",
+      "moveFromPath": "www.josephsmithpapers.org/paperSummary/book-of-commandments-1833?dm=text&p=23.html",
+      "offlinePath": "www.josephsmithpapers.org/paperSummary/book-of-commandments-1833_23.html"
+    },
+    {
+      "name": "Joseph Smith Papers: Original Book of Mormon, pg. 25",
+      "overwriteUrl": "http://www.josephsmithpapers.org/paperSummary/book-of-mormon-1830?dm=text&p=31",
+      "moveFromPath": "www.josephsmithpapers.org/paperSummary/book-of-mormon-1830?dm=text&p=31.html",
+      "offlinePath": "www.josephsmithpapers.org/paperSummary/book-of-mormon-1830_31.html"
+    },
+    {
+      "name": "Joseph Smith Papers: Original Book of Mormon, pg. 26",
+      "overwriteUrl": "http://www.josephsmithpapers.org/paperSummary/book-of-mormon-1830?dm=text&p=32",
+      "moveFromPath": "www.josephsmithpapers.org/paperSummary/book-of-mormon-1830?dm=text&p=32.html",
+      "offlinePath": "www.josephsmithpapers.org/paperSummary/book-of-mormon-1830_32.html"
+    },
+    {
+      "name": "Joseph Smith Papers: Original Book of Mormon, pg. 32",
+      "overwriteUrl": "http://www.josephsmithpapers.org/paperSummary/book-of-mormon-1830?dm=text&p=38",
+      "moveFromPath":  "www.josephsmithpapers.org/paperSummary/book-of-mormon-1830?dm=text&p=38.html",
+      "offlinePath": "www.josephsmithpapers.org/paperSummary/book-of-mormon-1830_38.html"
+    },
+    {
+      "name": "Joseph Smith Papers: Original Book of Mormon, pg. 535",
+      "overwriteUrl": "http://www.josephsmithpapers.org/paperSummary/book-of-mormon-1830?dm=text&p=535",
+      "moveFromPath":  "www.josephsmithpapers.org/paperSummary/book-of-mormon-1830?dm=text&p=38.html",
+      "offlinePath": "www.josephsmithpapers.org/paperSummary/book-of-mormon-1830_535.html"
+    },
+    {
+      "name": "Joseph Smith Papers: Original Book of Mormon",
+      "overwriteUrl": "http://www.josephsmithpapers.org/paperSummary/book-of-mormon-1830?dm=text&p=7",
+      "moveFromPath":  "www.josephsmithpapers.org/paperSummary/book-of-mormon-1830?dm=text&p=7.html",
+      "offlinePath": "www.josephsmithpapers.org/paperSummary/book-of-mormon-1830_7.html"
+    },
+    {
+      "name": "LDS Callings: Relief Society President Zina H. Young",
+      "offlinePath": "www.lds.org/callings/relief-society/relief-society-presidents/zina-h-young.html"
+    },
+    {
+      "name": "LDS Church Temples: Porto Alegre",
+      "offlinePath": "www.ldschurchtemples.com/portoalegre/index.html"
+    },
+    {
+      "name": "LDS Essay: Book of Mormon Translation",
+      "moveFromPath": "www.lds.org/topics/book-of-mormon-translation?lang=eng.html",
+      "offlinePath": "www.lds.org/topics/book-of-mormon-translation.html"
+    },
+    {
+      "name": "LDS Essay: Plural Marriage in Kirtland and Nauvoo",
+      "moveFromPath": "www.lds.org/topics/plural-marriage-in-kirtland-and-nauvoo?lang=eng.html",
+      "offlinePath": "www.lds.org/topics/plural-marriage-in-kirtland-and-nauvoo.html"
+    },
+    {
+      "name": "LDS Essay: Race and the Priesthood",
+      "moveFromPath": "www.lds.org/topics/race-and-the-priesthood?lang=eng.html",
+      "offlinePath": "www.lds.org/topics/race-and-the-priesthood.html"
+    },
+    {
+      "name": "LDS Essay: Translation and Historicity of the Book of Abraham",
+      "moveFromPath": "www.lds.org/topics/translation-and-historicity-of-the-book-of-abraham?lang=eng.html",
+      "offlinePath": "www.lds.org/topics/translation-and-historicity-of-the-book-of-abraham.html"
+    },
+    {
+      "name": "LDS Manuals: Preparing for Exaltation, Lesson 23: Obedience is the First Law of Heaven",
+      "moveFromPath": "www.lds.org/manual/preparing-for-exaltation-teachers-manual/lesson-23-obedience-the-first-law-of-heaven?lang=eng.html",
+      "offlinePath": "www.lds.org/manual/preparing-for-exaltation-teachers-manual/lesson-23-obedience-the-first-law-of-heaven.html"
+    },
+    {
+      "name": "LDS Scriptures: 1 Nephi 11:18",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_bofm_1-ne_1118.html"
+    },
+    {
+      "name": "LDS Scriptures: 1 Nephi 11:21",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_bofm_1-ne_1121.html"
+    },
+    {
+      "name": "LDS Scriptures: 1 Nephi 11:32",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_bofm_1-ne_1132.html"
+    },
+    {
+      "name": "LDS Scriptures: 1 Nephi 13:40",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_bofm_1-ne_1340.html"
+    },
+    {
+      "name": "LDS Scriptures: 1 Nephi 4",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_bofm_1-ne_4.html"
+    },
+    {
+      "name": "LDS Scriptures: 2 Nephi 26:33",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_bofm_2-ne_2633.html"
+    },
+    {
+      "name": "LDS Scriptures: 2 Nephi 2:22",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_bofm_2-ne_222.html"
+    },
+    {
+      "name": "LDS Scriptures: 3 Nephi 13:25-27",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_bofm_3-ne_1325-27.html"
+    },
+    {
+      "name": "LDS Scriptures: Abraham 1:12",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_pgp_abr_112.html"
+    },
+    {
+      "name": "LDS Scriptures: Abraham 1:14",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_pgp_abr_114.html"
+    },
+    {
+      "name": "LDS Scriptures: Abraham",
+      "moveFromPath": "",
+      "offlinePath": "abr_index.html"
+    },
+    {
+      "name": "LDS Scriptures: Alma 11:38-39",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_bofm_alma_1138-39.html"
+    },
+    {
+      "name": "LDS Scriptures: Alma 12:23-24",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_bofm_alma_1223-24.html"
+    },
+    {
+      "name": "LDS Scriptures: Bible Dictionary Jehovah",
+      "moveFromPath": "",
+      "offlinePath": "bible_dictionary_jehovah.html"
+    },
+    {
+      "name": "LDS Scriptures: Book of Mormon",
+      "moveFromPath": "",
+      "offlinePath": "bofm_index.html"
+    },
+    {
+      "name": "LDS Scriptures: D&C 110:13",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_dc-testament_dc_11013.html"
+    },
+    {
+      "name": "LDS Scriptures: D&C 110:1",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_dc-testament_dc_1101.html"
+    },
+    {
+      "name": "LDS Scriptures: D&C 132:41",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_dc-testament_dc_13241.html"
+    },
+    {
+      "name": "LDS Scriptures: D&C 132:4",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_dc-testament_dc_1324.html"
+    },
+    {
+      "name": "LDS Scriptures: D&C 132:61",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_dc-testament_dc_13261.html"
+    },
+    {
+      "name": "LDS Scriptures: D&C 132:63",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_dc-testament_dc_13263.html"
+    },
+    {
+      "name": "LDS Scriptures: D&C 132",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_dc-testament_dc_132.html"
+    },
+    {
+      "name": "LDS Scriptures: D&C 77:6-7",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_dc-testament_dc_776-7.html"
+    },
+    {
+      "name": "LDS Scriptures: D&C 8:6-11",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_dc-testament_dc_86-11.html"
+    },
+    {
+      "name": "LDS Scriptures: D&C 8",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_dc-testament_dc_8.html"
+    },
+    {
+      "name": "LDS Scriptures: D&C 93:36",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_dc-testament_dc_9336.html"
+    },
+    {
+      "name": "LDS Scriptures: Deut. 21:18-21",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_ot_deut_2118-21.html"
+    },
+    {
+      "name": "LDS Scriptures: Ether 2:19-20",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_bofm_ether_219-20.html"
+    },
+    {
+      "name": "LDS Scriptures: Ether 3:14-15",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_bofm_ether_314-15.html"
+    },
+    {
+      "name": "LDS Scriptures: Ether 8:16",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_bofm_ether_816.html"
+    },
+    {
+      "name": "LDS Scriptures: Exodus 12:12",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_ot_ex_1212.html"
+    },
+    {
+      "name": "LDS Scriptures: Exodus 35:1-2",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_ot_ex_351-2.html"
+    },
+    {
+      "name": "LDS Scriptures: Hel. 13-16",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_helaman.html"
+    },
+    {
+      "name": "LDS Scriptures: Hymn \"Do What Is Right\"",
+      "moveFromPath": "",
+      "offlinePath": "do-what-is-right.html"
+    },
+    {
+      "name": "LDS Scriptures: JS-H 1:18",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_pgp_js-h_118.html"
+    },
+    {
+      "name": "LDS Scriptures: JS-H 1:56-58",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_pgp_js-h_156-58.html"
+    },
+    {
+      "name": "LDS Scriptures: JS-H 1:7",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_pgp_js-h_17.html"
+    },
+    {
+      "name": "LDS Scriptures: JS-H 1",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_pgp_js-h_1.html"
+    },
+    {
+      "name": "LDS Scriptures: JST Matt. 6:25-27",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_jst_jst-matt_6.html"
+    },
+    {
+      "name": "LDS Scriptures: Jacob 2:30",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_bofm_jacob_230.html"
+    },
+    {
+      "name": "LDS Scriptures: Judges 19:22-29",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_ot_judg_1922-29.html"
+    },
+    {
+      "name": "LDS Scriptures: Matt. 6:25-27",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_nt_matt_625-27.html"
+    },
+    {
+      "name": "LDS Scriptures: Mosiah 15:1-4",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_bofm_mosiah_151-4.html"
+    },
+    {
+      "name": "LDS Scriptures: Mosiah 16:15",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_bofm_mosiah_1615.html"
+    },
+    {
+      "name": "LDS Scriptures: Num. 21:5-9",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_ot_num_215-9.html"
+    },
+    {
+      "name": "LDS Scriptures: Num. 31",
+      "moveFromPath": "",
+      "offlinePath": "scriptures_ot_num_31.html"
+    },
+    {
+      "name": "LDS Scriptures: Official Declaration 2",
+      "moveFromPath": "",
+      "offlinePath": "official_declaration_2.html"
+    },
+    {
+      "name": "LDS Scriptures: Testimony of Eight Witnesses",
+      "moveFromPath": "",
+      "offlinePath": "testimony_of_eight_witnesses.html"
+    },
+    {
+      "name": "LDS Scriptures: Testimony of Three Witnesses",
+      "moveFromPath": "",
+      "offlinePath": "testimony_of_three_witnesses.html"
+    },
+    {
+      "name": "Link to Image of Shakers Dancing",
+      "moveFromPath": "amhistory.si.edu/petersprints/lithograph.cfm?id=514169&Category=music&Results_Per=10&search_all=false.html",
+      "offlinePath": "amhistory.si.edu/petersprints/lithograph_514169.html"
+    },
+    {
+      "name": "Provident Living: Self-Reliance",
+      "moveFromPath": "providentliving.lds.org/self-reliance?lang=eng.html",
+      "offlinePath": "providentliving.lds.org/self-reliance.html"
+    },
+    {
+      "name": "Rough Stone Rolling p. 75",
+      "overwriteUrl": "https://books.google.com/books?id=Mz3tpz4eRBQC&pg=PA75&lpg=PP1&focus=viewport&output=html_text",
+      "moveFromPath": "books.google.com/books?id=Mz3tpz4eRBQC&pg=PA75&lpg=PP1&focus=viewport&output=html_text.html",
+      "offlinePath": "books.google.com/Mz3tpz4eRBQC_PA75.html"
+    },
+    {
+      "name": "Teachings of the Presidents of the Church: Brigham Young Chapter 23",
+      "moveFromPath": "www.lds.org/manual/teachings-brigham-young/chapter-23?lang=eng.html",
+      "offlinePath": "www.lds.org/manual/teachings-brigham-young/chapter-23.html"
+    },
+    {
+      "name": "The Mormon Delusions, Vol 3, pg. 235",
+      "overwriteUrl": "https://books.google.com/books?id=7Dk993FxE5AC&pg=PA235&lpg=PA235&focus=viewport&output=html_text",
+      "moveFromPath": "books.google.com/books?id=7Dk993FxE5AC&pg=PA235&lpg=PA235&focus=viewport&output=html_text.html",
+      "offlinePath": "books.google.com/7Dk993FxE5AC_PA235.html"
+    },
+    {
+      "name": "The Seven Deadly Heresies",
+      "offlinePath": "speeches.byu.edu/talks/bruce-r-mcconkie_seven-deadly-heresies/index.html"
+    }
+  ],
+  "wget": [
+    {
+      "name": "An Address to All Believers in Christ, p.31",
+      "overwriteUrl": "https://books.google.com/books?id=wVU3AAAAMAAJ&pg=PA31&hl=en&output=html_text",
+      "moveFromPath": "books.google.com/books?id=wVU3AAAAMAAJ&pg=PA31&hl=en&output=html_text.html",
+      "offlinePath": "books.google.com/wVU3AAAAMAAJ_PA31.html"
+    },
+    {
+      "name": "An Address to All Believers in Christ, pg. 27",
+      "overwriteUrl": "https://books.google.com/books?id=wVU3AAAAMAAJ&pg=PA27&hl=en&output=html_text",
+      "moveFromPath": "books.google.com/books?id=wVU3AAAAMAAJ&pg=PA27&hl=en&output=html_text.html",
+      "offlinePath": "books.google.com/wVU3AAAAMAAJ_PA27.html"
+    },
+    {
+      "name": "Article: Debate Renewed With Change in Book of Mormon Introduction",
+      "moveFromPath": "www.deseretnews.com/article/695226008/Debate-renewed-with-change-in-Book-of-Mormon-introduction.html?pg=all.html",
+      "offlinePath": "www.deseretnews.com/article/695226008/Debate-renewed-with-change-in-Book-of-Mormon-introduction.html"
+    },
+    {
+      "name": "Article: How the Mormons Make Money",
+      "offlinePath": "www.businessweek.com/articles/2012-07-10/how-the-mormons-make-money.html"
+    },
+    {
+      "name": "Article: Mormonism Besieged by the Modern Age",
+      "offlinePath": "www.reuters.com/article/2012/01/31/us-mormonchurch-idUSTRE80T1CM20120131.html"
+    },
+    {
+      "name": "Article: Talk to the All-Church Coordinating Council",
+      "offlinePath": "www.lds-mormon.com/face.html"
+    },
+    {
+      "name": "Article: Translation or Divination",
+      "offlinePath": "mit.irr.org/translation-or-divination.html"
+    },
+    {
+      "name": "Article: Wayne Sentinel 1825-02-16",
+      "offlineAppend": "#021625",
+      "offlinePath": "www.sidneyrigdon.com/dbroadhu/NY/miscNYSg.htm"
+    },
+    {
+      "name": "Book: 1984",
+      "offlinePath": "www.amazon.com/1984-Signet-Classics-George-Orwell/dp/0451524934.html"
+    },
+    {
+      "name": "Book: Mormonism: Its Origin, Rise, and Progress",
+      "overwriteUrl": "https://archive.org/stream/originriseprogre00tuck/originriseprogre00tuck_djvu.txt",
+      "offlinePath": "archive.org/stream/originriseprogre00tuck/originriseprogre00tuck_djvu.txt.html"
+    },
+    {
+      "name": "Book: Rough Stone Rolling",
+      "offlinePath": "www.amazon.com/Joseph-Smith-Rough-Stone-Rolling/dp/1400077532.html"
+    },
+    {
+      "name": "Book: Studies of the Book of Mormon",
+      "offlinePath": "amzn.com/1560850272.html"
+    },
+    {
+      "name": "Book: The First Book of Napoleon",
+      "overwriteUrl": "https://archive.org/stream/firstbooknapole00gruagoog/firstbooknapole00gruagoog_djvu.txt",
+      "offlinePath": "archive.org/stream/firstbooknapole00gruagoog/firstbooknapole00gruagoog_djvu.txt.html"
+    },
+    {
+      "name": "Book: The Late War",
+      "overwriteUrl": "https://archive.org/stream/latewarbetweenun00inhunt/latewarbetweenun00inhunt_djvu.txt",
+      "offlinePath": "archive.org/stream/latewarbetweenun00inhunt/latewarbetweenun00inhunt_djvu.txt.html"
+    },
+    {
+      "name": "Book: The Philosophy of the Future State",
+      "overwriteUrl": "https://archive.org/stream/thephilosophyofa00dickuoft/thephilosophyofa00dickuoft_djvu.txt",
+      "offlinePath": "archive.org/stream/thephilosophyofa00dickuoft/thephilosophyofa00dickuoft_djvu.txt.html"
+    },
+    {
+      "name": "Book: View of the Hebrews",
+      "offlinePath": "olivercowdery.com/texts/ethn1823.htm"
+    },
+    {
+      "name": "Brigham Young, 1854-10-08",
+      "offlinePath": "signaturebookslibrary.org/essential-brigham-young-09/index.html"
+    },
+    {
+      "name": "CC-by-nc-3.0",
+      "offlinePath": "creativecommons.org/licenses/by-nc/3.0/index.html"
+    },
+    {
+      "name": "CES Letter Homepage",
+      "offlinePath": "www.cesletter.com/index.html"
+    },
+    {
+      "name": "CES Letter Website Link to LDS Essays",
+      "offlinePath": "www.cesletter.com/essays/index.html"
+    },
+    {
+      "name": "CES Letter at the Crossroads",
+      "offlinePath": "cesletter.com/ces-letter-at-the-crossroads.html"
+    },
+    {
+      "name": "Debunking Fairs Debunking",
+      "offlinePath": "cesletter.com/debunking-fairmormon/index.html"
+    },
+    {
+      "name": "FAIR: 1949 First Presidency Statement",
+      "offlinePath": "en.fairmormon.org/Mormonism_and_racial_issues/Blacks_and_the_priesthood/Statements.html"
+    },
+    {
+      "name": "FAIR: BOM Textual Changes",
+      "overwriteUrl": "http://en.fairmormon.org/Book_of_Mormon/Textual_changes#Insignificant_changes",
+      "offlineAppend": "#Insignificant_changes",
+      "offlinePath": "en.fairmormon.org/Book_of_Mormon/Textual_changes.html"
+    },
+    {
+      "name": "FAIR: Joseph the Seer or Why Did He Translate With a Rock In His Hat",
+      "offlinePath": "www.fairlds.org/fair-conferences/2009-fair-conference/2009-joseph-the-seer-or-why-did-he-translate-with-a-rock-in-his-hat.html"
+    },
+    {
+      "name": "FAIR: Polyandry Marinda Hyde",
+      "offlineAppend": "#Marinda_Nancy_Johnson_Hyde",
+      "offlinePath": "en.fairmormon.org/Polygamy_book/Polyandry.html"
+    },
+    {
+      "name": "FAIR: Primary Source - Joseph's First Vision 1832",
+      "offlinePath": "en.fairmormon.org/Primary_sources/First_Vision_accounts/1832.html"
+    },
+    {
+      "name": "FAIR: Primary Source - Joseph's First Vision 1835",
+      "offlinePath": "en.fairmormon.org/Joseph_Smith%27s_First_Vision/Accounts/1835.html"
+    },
+    {
+      "name": "FAIR: Rock in hat used for Book of Mormon translation",
+      "overwriteUrl": "http://en.fairmormon.org/Joseph_Smith/Seer_stones/%22Rock_in_hat%22_used_for_Book_of_Mormon_translation",
+      "offlinePath": "en.fairmormon.org/Joseph_Smith/Seer_stones/%22Rock_in_hat%22_used_for_Book_of_Mormon_translation.html"
+    },
+    {
+      "name": "FAIRMormon Response",
+      "offlinePath": "en.fairmormon.org/Criticism_of_Mormonism/Online_documents/Letter_to_a_CES_Director.html"
+    },
+    {
+      "name": "FARMS: Horses in the Book of Mormon",
+      "overwriteUrl": "http://publications.mi.byu.edu/fullscreen/?pub=1055&index=1",
+      "moveFromPath": "publications.mi.byu.edu/fullscreen/index.html?pub=1055&index=1.html",
+      "offlinePath": "publications.mi.byu.edu/fullscreen/1055.html"
+    },
+    {
+      "name": "FARMS: How Joseph Smith Translated the Book of Mormon",
+      "overwriteUrl": "http://publications.mi.byu.edu/fullscreen/?pub=1397&index=4",
+      "moveFromPath": "publications.mi.byu.edu/fullscreen/index.html?pub=1397&index=4.html",
+      "offlinePath": "publications.mi.byu.edu/fullscreen/1397.html"
+    },
+    {
+      "name": "Hinckley 2002 Onlymics Interview",
+      "offlinePath": "www.mscbc.org/hinckley.htm"
+    },
+    {
+      "name": "Images of the Restoration: Joseph Smith Translating the Golden Plates",
+      "moveFromPath": "www.imagesoftherestoration.org/blog/index.html?p=8.html",
+      "offlinePath": "www.imagesoftherestoration.org/blog/8.html"
+    },
+    {
+      "name": "Journal of Discourses 11:269",
+      "offlinePath": "journalofdiscourses.com/11/41.html"
+    },
+    {
+      "name": "Journal of Discourses 13:95",
+      "offlinePath": "journalofdiscourses.com/13/13.html"
+    },
+    {
+      "name": "Journal of Discourses 1:8",
+      "offlinePath": "journalofdiscourses.com/1/8.html"
+    },
+    {
+      "name": "Journal of Discourses 4:53-54",
+      "offlinePath": "journalofdiscourses.com/4/10.html"
+    },
+    {
+      "name": "Just Another Apostate Instagram",
+      "offlinePath": "instagram.com/justanotherapostate.html"
+    },
+    {
+      "name": "LDS - Strangite Homepage",
+      "offlinePath": "www.strangite.org/index.html"
+    },
+    {
+      "name": "Larry King Live 1998 Interview",
+      "offlinePath": "www.entertainment4lds.com/Interviews/1/index.htm"
+    },
+    {
+      "name": "Lecture at the Veil",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Adam%E2%80%93God_doctrine",
+      "offlineAppend": "#Adam.E2.80.93God_in_Young.27s_later_administration",
+      "moveFromPath": "en.m.wikipedia.org/wiki/Adam\\342\\200\\223God_doctrine.html",
+      "offlinePath": "en.m.wikipedia.org/wiki/Adam-God_doctrine.html"
+    },
+    {
+      "name": "Mormon Infographics: Abraham Facsimile 1",
+      "offlinePath": "www.mormoninfographics.com/2012/08/book-of-abraham-facsimile-1-examined.html"
+    },
+    {
+      "name": "Mormon Infographics: Abraham Facsimile 2",
+      "offlinePath": "www.mormoninfographics.com/2012/08/book-of-abraham-facsimile-2-examined.html"
+    },
+    {
+      "name": "Mormon Infographics: Abraham Facsimile 3",
+      "offlinePath": "www.mormoninfographics.com/2012/08/book-of-abraham-facsimile-3-examined.html"
+    },
+    {
+      "name": "Mormon Infographics: Joseph Smith vs. Warrn Jeffs",
+      "offlinePath": "www.mormoninfographics.com/2012/08/joseph-smith-vs-warren-jeffs-visualized.html"
+    },
+    {
+      "name": "Mormon Infographics: Joseph Smith's First Vision",
+      "offlinePath": "www.mormoninfographics.com/2012/09/joseph-smiths-first-vision-and-his.html"
+    },
+    {
+      "name": "Mormon Infographics: Kinderhook Plates",
+      "offlinePath": "www.mormoninfographics.com/2012/09/kinderhook-plates-hoax-or-history.html"
+    },
+    {
+      "name": "Mormon Infographics: The Many Wives of Joseph Smith",
+      "offlinePath": "www.mormoninfographics.com/2012/09/the-many-wives-of-joseph-smith.html"
+    },
+    {
+      "name": "Mormonism: Its Origin, Rise, and Progress, p.17",
+      "overwriteUrl": "https://archive.org/stream/originriseprogre00tuck/originriseprogre00tuck_djvu.txt",
+      "offlinePath": "archive.org/stream/originriseprogre00tuck/originriseprogre00tuck_djvu.txt.html"
+    },
+    {
+      "name": "Mormonism: Its Origin, Rise, and Progress, p.71",
+      "overwriteUrl": "https://archive.org/stream/originriseprogre00tuck/originriseprogre00tuck_djvu.txt",
+      "offlinePath": "archive.org/stream/originriseprogre00tuck/originriseprogre00tuck_djvu.txt.html"
+    },
+    {
+      "name": "Origin and History of the Mormonites, p. 406",
+      "overwriteUrl": "https://books.google.com/books?id=NXzQAAAAMAAJ&pg=PA406&hl=en&output=html_text",
+      "moveFromPath": "books.google.com/books?id=NXzQAAAAMAAJ&pg=PA406&hl=en&output=html_text.html",
+      "offlinePath": "books.google.com/NXzQAAAAMAAJ_406.html"
+    },
+    {
+      "name": "Sidney Rigdon, Letter and Testimony 1841-02-15",
+      "offlinePath": "www.olivercowdery.com/smithhome/1838Sent.htm"
+    },
+    {
+      "name": "The First Book of Napoleon, pg. 9",
+      "overwriteUrl": "https://archive.org/stream/firstbooknapole00gruagoog/firstbooknapole00gruagoog_djvu.txt",
+      "offlinePath": "archive.org/stream/firstbooknapole00gruagoog/firstbooknapole00gruagoog_djvu.txt.html"
+    },
+    {
+      "name": "The Journey",
+      "offlinePath": "20truths.info/mormon/story.html"
+    },
+    {
+      "name": "The Late War, pg. 9",
+      "overwriteUrl": "https://archive.org/stream/readercontain00hunt/readercontain00hunt_djvu.txt",
+      "offlinePath": "archive.org/stream/readercontain00hunt/readercontain00hunt_djvu.txt.html"
+    },
+    {
+      "name": "The Latter Day Church of Jesus Christ",
+      "offlinePath": "www.latterdaymormon.co.uk/index.html"
+    },
+    {
+      "name": "View of the Hebrews, p.20",
+      "overwriteUrl": "http://olivercowdery.com/texts/ethn1823.htm",
+      "offlineAppend": "#pg020a",
+      "offlinePath": "olivercowdery.com/texts/ethn1823.htm"
+    },
+    {
+      "name": "Wikipedia: Anachronisms in the Book of Mormon",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Anachronisms_in_the_Book_of_Mormon",
+      "offlineAppend": "#Chariots_or_wheeled_vehicles",
+      "offlinePath": "en.m.wikipedia.org/wiki/Anachronisms_in_the_Book_of_Mormon.html"
+    },
+    {
+      "name": "Wikipedia: Anubis",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Anubis",
+      "offlinePath": "en.m.wikipedia.org/wiki/Anubis.html"
+    },
+    {
+      "name": "Wikipedia: B.H. Roberts",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/B._H._Roberts",
+      "offlinePath": "en.m.wikipedia.org/wiki/B._H._Roberts.html"
+    },
+    {
+      "name": "Wikipedia: BOM Translation Errors",
+      "overwriteUrl": "http://en.m.wikipedia.org/w/index.php?title=The_Book_of_Mormon_and_the_King_James_Bible&oldid=582211861",
+      "moveFromPath": "en.m.wikipedia.org/w/index.php?title=The_Book_of_Mormon_and_the_King_James_Bible&oldid=582211861.html",
+      "offlineAppend": "#Perpetuation_of_translation_errors",
+      "offlinePath": "en.m.wikipedia.org/w/The_Book_of_Mormon_and_the_King_James_Bible.html"
+    },
+    {
+      "name": "Wikipedia: BOM and 1985 Publication",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Studies_of_the_Book_of_Mormon",
+      "offlineAppend": "#Controversy_within_the_LDS_Church_after_the_1985_publication",
+      "offlinePath": "en.m.wikipedia.org/wiki/Studies_of_the_Book_of_Mormon.html"
+    },
+    {
+      "name": "Wikipedia: BOM and Archaeological Findings",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Archaeology_and_the_Book_of_Mormon",
+      "offlineAppend": "#Anachronisms_and_archaeological_findings",
+      "offlinePath": "en.m.wikipedia.org/wiki/Archaeology_and_the_Book_of_Mormon.html"
+    },
+    {
+      "name": "Wikipedia: BOM and DNA",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Genetics_and_the_Book_of_Mormon",
+      "offlinePath": "en.m.wikipedia.org/wiki/Genetics_and_the_Book_of_Mormon.html"
+    },
+    {
+      "name": "Wikipedia: BOM and LDS Funded Archaeology",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Historical_authenticity_of_the_Book_of_Mormon",
+      "offlineAppend": "#LDS-funded_archaeology",
+      "offlinePath": "en.m.wikipedia.org/wiki/Historical_authenticity_of_the_Book_of_Mormon.html"
+    },
+    {
+      "name": "Wikipedia: BOM and Pre-Columbian Archaeology",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Archaeology_and_the_Book_of_Mormon",
+      "offlineAppend": "#Archaeology_research_in_pre-Columbian_Americas_and_the_Book_of_Mormon",
+      "offlinePath": "en.m.wikipedia.org/wiki/Archaeology_and_the_Book_of_Mormon.html"
+    },
+    {
+      "name": "Wikipedia: BOM and View of the Hebrews Controversy",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Oliver_Cowdery",
+      "offlineAppend": "#View_of_the_Hebrews_controversy",
+      "offlinePath": "en.m.wikipedia.org/wiki/Oliver_Cowdery.html"
+    },
+    {
+      "name": "Wikipedia: Blood Atonement",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Blood_atonement",
+      "offlinePath": "en.m.wikipedia.org/wiki/Blood_atonement.html"
+    },
+    {
+      "name": "Wikipedia: Book of the Law of the Lord Witnesses",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Book_of_the_Law_of_the_Lord",
+      "offlineAppend": "#Witnesses",
+      "offlinePath": "en.m.wikipedia.org/wiki/Book_of_the_Law_of_the_Lord.html"
+    },
+    {
+      "name": "Wikipedia: Book of the Law of the Lord",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Book_of_the_Law_of_the_Lord",
+      "offlinePath": "en.m.wikipedia.org/wiki/Book_of_the_Law_of_the_Lord.html"
+    },
+    {
+      "name": "Wikipedia: City Creek Center",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/City_Creek_Center",
+      "offlinePath": "en.m.wikipedia.org/wiki/City_Creek_Center.html"
+    },
+    {
+      "name": "Wikipedia: Comoros",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Comoros",
+      "offlinePath": "en.m.wikipedia.org/wiki/Comoros.html"
+    },
+    {
+      "name": "Wikipedia: Dowsing",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Dowsing",
+      "offlinePath": "en.m.wikipedia.org/wiki/Dowsing.html"
+    },
+    {
+      "name": "Wikipedia: Early Life of Joseph Smith",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Early_life_of_Joseph_Smith",
+      "offlineAppend": "#Work_as_a_treasure_hunter_and_marriage_to_Emma_Hale",
+      "offlinePath": "en.m.wikipedia.org/wiki/Early_life_of_Joseph_Smith.html"
+    },
+    {
+      "name": "Wikipedia: Elijah Abel",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Elijah_Abel",
+      "offlinePath": "en.m.wikipedia.org/wiki/Elijah_Abel.html"
+    },
+    {
+      "name": "Wikipedia: Fanny Alger",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Fanny_Alger",
+      "offlineAppend": "#Relationship_with_Joseph_Smith",
+      "offlinePath": "en.m.wikipedia.org/wiki/Fanny_Alger.html"
+    },
+    {
+      "name": "Wikipedia: Finances of the Church of Jesus Christ of Latter-day Saints",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Finances_of_The_Church_of_Jesus_Christ_of_Latter-day_Saints",
+      "offlinePath": "en.m.wikipedia.org/wiki/Finances_of_The_Church_of_Jesus_Christ_of_Latter-day_Saints.html"
+    },
+    {
+      "name": "Wikipedia: Gladden Bishop's witnesses",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Gladden_Bishop",
+      "offlineAppend": "#Final_apostasy_and_becoming_a_prophet",
+      "offlinePath": "en.m.wikipedia.org/wiki/Gladden_Bishop.html"
+    },
+    {
+      "name": "Wikipedia: Gladden Bishop",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Gladden_Bishop",
+      "offlinePath": "wikipedia_Gen.m.wikipedia.org/wiki/Gladden_Bishopladden_Bishop.html"
+    },
+    {
+      "name": "Wikipedia: Homo genus",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Homo",
+      "offlinePath": "en.m.wikipedia.org/wiki/Homo.html"
+    },
+    {
+      "name": "Wikipedia: Image of Joseph Smith Translating",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/File:JosephSmithTranslating.jpg",
+      "moveFromPath": "en.m.wikipedia.org/wiki/File:JosephSmithTranslating.jpg.html",
+      "offlinePath": "en.m.wikipedia.org/wiki/Image_JosephSmithTranslating.html"
+    },
+    {
+      "name": "Wikipedia: Isis",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Isis",
+      "offlinePath": "en.m.wikipedia.org/wiki/Isis.html"
+    },
+    {
+      "name": "Wikipedia: James Strang",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/James_Strang",
+      "offlinePath": "en.m.wikipedia.org/wiki/James_Strang.html"
+    },
+    {
+      "name": "Wikipedia: Kiskiminetas River",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Kiskiminetas_River",
+      "offlinePath": "en.m.wikipedia.org/wiki/Kiskiminetas_River.html"
+    },
+    {
+      "name": "Wikipedia: LDS Endowment - Nauvoo Endowment",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Endowment_(Latter_Day_Saints)",
+      "moveFromPath": "en.m.wikipedia.org/wiki/Endowment_(Latter_Day_Saints).html",
+      "offlineAppend": "#The_Nauvoo_Endowment",
+      "offlinePath": "en.m.wikipedia.org/wiki/Endowment_Latter_Day_Saints.html"
+    },
+    {
+      "name": "Wikipedia: Limited Geography Model",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Limited_geography_model",
+      "offlinePath": "en.m.wikipedia.org/wiki/Limited_geography_model.html"
+    },
+    {
+      "name": "Wikipedia: List of Joseph Smith's Wives",
+      "overwriteUrl": "http://en.m.wikipedia.org/wiki/List_of_Joseph_Smith%27s_wives",
+      "moveFromPath": "en.m.wikipedia.org/wiki/List_of_Joseph_Smith's_wives.html",
+      "offlinePath": "en.m.wikipedia.org/wiki/List_of_Joseph_Smiths_wives.html"
+    },
+    {
+      "name": "Wikipedia: Maat",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Maat",
+      "offlinePath": "en.m.wikipedia.org/wiki/Maat.html"
+    },
+    {
+      "name": "Wikipedia: Mark Hoffman's Joseph Smith III Blessing",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Mark_Hofmann",
+      "offlineAppend": "#Joseph_Smith_III_blessing",
+      "offlinePath": "en.m.wikipedia.org/wiki/Mark_Hofmann.html"
+    },
+    {
+      "name": "Wikipedia: Mark Hoffmann Salamander Letter",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Mark_Hofmann",
+      "offlineAppend": "#Salamander_letter",
+      "offlinePath": "en.m.wikipedia.org/wiki/Mark_Hofmann.html"
+    },
+    {
+      "name": "Wikipedia: Mark Hofmann",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Mark_Hofmann",
+      "offlinePath": "en.m.wikipedia.org/wiki/Mark_Hofmann.html"
+    },
+    {
+      "name": "Wikipedia: Martin Harris",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Martin_Harris_(Latter_Day_Saints)",
+      "moveFromPath": "en.m.wikipedia.org/wiki/Martin_Harris_(Latter_Day_Saints).html",
+      "offlineAppend": "#Strangite.2C_Whitmerite.2C_Gladdenite.2C_Williamite.2C_Shaker",
+      "offlinePath": "en.m.wikipedia.org/wiki/Martin_Harris_Latter_Day_Saints.html"
+    },
+    {
+      "name": "Wikipedia: Min",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Min_(god)",
+      "moveFromPath": "en.m.wikipedia.org/wiki/Min_(god).html",
+      "offlinePath": "en.m.wikipedia.org/wiki/Min_god.html"
+    },
+    {
+      "name": "Wikipedia: Mormonism and Freemasonry Historical Connections",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Mormonism_and_Freemasonry",
+      "offlineAppend": "#Historical_connections",
+      "offlinePath": "en.m.wikipedia.org/wiki/Mormonism_and_Freemasonry.html"
+    },
+    {
+      "name": "Wikipedia: Moroni, Comoros",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Moroni,_Comoros",
+      "moveFromPath": "en.m.wikipedia.org/wiki/Moroni,_Comoros.html",
+      "offlinePath": "en.m.wikipedia.org/wiki/Moroni_Comoros.html"
+    },
+    {
+      "name": "Wikipedia: Nauvoo Expositor",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Nauvoo_Expositor",
+      "offlinePath": "en.m.wikipedia.org/wiki/Nauvoo_Expositor.html"
+    },
+    {
+      "name": "Wikipedia: Osiris",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Osiris",
+      "offlinePath": "en.m.wikipedia.org/wiki/Osiris.html"
+    },
+    {
+      "name": "Wikipedia: Paul H. Dunn",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Paul_H._Dunn",
+      "offlinePath": "en.m.wikipedia.org/wiki/Paul_H._Dunn.html"
+    },
+    {
+      "name": "Wikipedia: Polyandry",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Polyandry",
+      "offlinePath": "en.m.wikipedia.org/wiki/Polyandry.html"
+    },
+    {
+      "name": "Wikipedia: Salamander Letter",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Salamander_letter",
+      "offlinePath": "en.m.wikipedia.org/wiki/Salamander_letter.html"
+    },
+    {
+      "name": "Wikipedia: Seer Stone",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Seer_stone_(Latter_Day_Saints)",
+      "moveFromPath": "en.m.wikipedia.org/wiki/Seer_stone_(Latter_Day_Saints).html",
+      "offlineAppend": "#Seer_Stones_and_the_Book_of_Mormon",
+      "offlinePath": "en.m.wikipedia.org/wiki/Seer_stone_Latter_Day_Saints.html"
+    },
+    {
+      "name": "Wikipedia: September Six",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/September_Six",
+      "offlinePath": "en.m.wikipedia.org/wiki/September_Six.html"
+    },
+    {
+      "name": "Wikipedia: Strengthening the Church Members Committee",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Strengthening_Church_Members_Committee",
+      "offlinePath": "en.m.wikipedia.org/wiki/Strengthening_Church_Members_Committee.html"
+    },
+    {
+      "name": "Wikipedia: Tecumseh",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Tecumseh",
+      "offlinePath": "en.m.wikipedia.org/wiki/Tecumseh.html"
+    },
+    {
+      "name": "Wikipedia: The Church of Jesus Christ of Latter Day Saints Strangite",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Church_of_Jesus_Christ_of_Latter_Day_Saints_(Strangite)",
+      "moveFromPath": "en.m.wikipedia.org/wiki/Church_of_Jesus_Christ_of_Latter_Day_Saints_(Strangite).html",
+      "offlinePath": "en.m.wikipedia.org/wiki/Church_of_Jesus_Christ_of_Latter_Day_Saints_Strangite.html"
+    },
+    {
+      "name": "Wikipedia: The Church of the Latter Day Saints Name and Legal Entities",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/The_Church_of_Jesus_Christ_of_Latter-day_Saints",
+      "offlineAppend": "#Name_and_legal_entities",
+      "offlinePath": "en.m.wikipedia.org/wiki/The_Church_of_Jesus_Christ_of_Latter-day_Saints-day_Saints.html"
+    },
+    {
+      "name": "Wikipedia: Voree Plates",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Voree_plates",
+      "offlinePath": "en.m.wikipedia.org/wiki/Voree_plates.html"
+    },
+    {
+      "name": "Wikipedia: W. Wallace Smith",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/W._Wallace_Smith",
+      "offlinePath": "en.m.wikipedia.org/wiki/W._Wallace_Smith.html"
+    },
+    {
+      "name": "Wikipedia: Walker Lewis",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Walker_lewis",
+      "offlinePath": "en.m.wikipedia.org/wiki/Walker_lewis.html"
+    },
+    {
+      "name": "Wikipedia: Warren Jeffs",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Warren_Jeffs",
+      "offlinePath": "en.m.wikipedia.org/wiki/Warren_Jeffs.html"
+    },
+    {
+      "name": "Wikipedia: origin of the BOM: The View of the Hebrews Theory",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Origin_of_the_Book_of_Mormon",
+      "offlineAppend": "#Smith_as_a_plagiarist_of_contemporaries:_the_View_of_the_Hebrews_theory",
+      "offlinePath": "en.m.wikipedia.org/wiki/Origin_of_the_Book_of_Mormon.html"
+    },
+    {
+      "name": "WordTree Foundation: The Late War",
+      "offlinePath": "wordtreefoundation.github.io/thelatewar/index.html"
+    },
+    {
+      "name": "Youtube: Mormon Stories Interview with Jeremy Runnells",
+      "offlinePath": "cesletter.com/interview/index.html"
+    }
+  ],
+  "videos": [
+    {
+      "name": "Youtube: 2012 BBC Interview with Elder Holland",
+      "start": 33,
+      "end": 58,
+      "overwriteUrl": "http://www.dailymotion.com/video/x2n2ggb",
+      "offlinePath": "x2n2ggb_33_58.mp4"
+    },
+    {
+      "name": "Youtube: Elder Holland Discusses the SCMC",
+      "start": 342,
+      "end": 397,
+      "overwriteUrl": "http://www.dailymotion.com/video/x2n2ggb",
+      "offlinePath": "x2n2ggb_342_397.mp4"
+    },
+    {
+      "name": "Youtube: Elder Marlin K. Jensen on Polyandry (Swedish Rescue Fireside)",
+      "overwriteUrl": "https://youtu.be/of7HNe3cbuo",
+      "offlinePath": "of7HNe3cbuo.mp4"
+    },
+    {
+      "name": "Youtube: Follow the Spirit",
+      "overwriteUrl": "https://youtu.be/ycUvC9s4VYA",
+      "offlinePath": "ycUvC9s4VYA.mp4"
+    },
+    {
+      "name": "Youtube: Let's go shopping",
+      "overwriteUrl": "https://youtu.be/cf-_vxsog4A",
+      "offlinePath": "cf-_vxsog4A.mp4"
+    },
+    {
+      "name": "Youtube: The Mormons, 51 seconds in",
+      "overwriteUrl": "https://youtu.be/NvNDjND4eLI",
+      "start": 51,
+      "end": 58,
+      "offlinePath": "NvNDjND4eLI_51_58.mp4"
+    },
+    {
+      "name": "Youtube: What is truth",
+      "overwriteUrl": "https://youtu.be/sgRR9WZPp5c",
+      "start": 1984,
+      "end": 2062,
+      "offlinePath": "sgRR9WZPp5c_1980_2062.mp4"
+    }
+  ]
+}
