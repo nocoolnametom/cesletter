@@ -1,53 +1,85 @@
+'use strict';
+
+var exec = require('child_process').exec;
 var execSync = require('child_process').execSync;
 var fs = require('fs');
-var path = require('path');
 var paths = require('./utils/paths');
-var express = require('express');
 var offlineLinks = require(paths.markdownSource + 'offline_links.json');
 var getLinksFromMarkdownList = require('./utils/getLinksFromMarkdownList');
 
-function downloadFromLocalServer(links, sites) {
-  console.log('starting loop of ' + links.length + ' sites');
+var port = 1337;
+
+function downloadSimpleSitesViaProxy(links, sites, callback) {
+  var count = 0;
+
+  var success = typeof callback === 'function' ? callback : function () {};
+  
   sites.forEach(site => {
-    
+    var url = site.overwriteUrl || (links.reduce((prev, link) => {
+      return (link.name === site.name) ? link.url : prev;
+    }, false));
+
     var wgetCmd = [
       'wget',
-      'http://localhost:3000/' + site.offlinePath,
+      '-e use_proxy=yes',
+      '-e http_proxy=localhost:' + port,
+      '-e https_proxy=localhost:' + port,
+      '--no-check-certificate',
+      '--ca-certificate=../.http-mitm-proxy/certs/ca.pem',
+      '--ca-directory=../.http-mitm-proxy/certs/',
+      '--page-requisites',
+      '--adjust-extension',
+      '--convert-links',
+      '--span-hosts',
+      '--backup-converted',
+      '--timeout=10',
+      '--load-cookies cookies.txt',
+      '--save-cookies cookies.txt',
+      '--header="User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.11 '
+        + '(KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11"',
+      '--header="Referer: http://xmodulo.com/"',
+      '--header="CESLETTER-PATH: ' + url.replace(/^([^\/]+)\/\/([^\/]+)/, '') + '"',
+      '--timeout=45',
+      '--quiet',
+      '-e robots=off',
+      '"' + url + '"'
     ].join(' ');
 
-    console.log(wgetCmd);
-
-    execSync(wgetCmd, {
-      cwd: 'local',
-      timeout: 60,
-    });
+    try {
+      var result = execSync(wgetCmd, {
+        cwd: 'local',
+      });
+    } catch (err) {}
+    var lastSite = ++count === sites.length;
+    if (site.moveFromPath && site.moveFromPath.length) {
+      var mvCmd = [
+        'mv',
+        '"' + site.moveFromPath + '"',
+        '"' + site.offlinePath + '"'
+      ].join(' ');
+      exec(mvCmd, { cwd: 'local' }, () => {
+        if (lastSite) {
+          success();
+        }
+      });
+    } else {
+      if (lastSite) {
+        success();
+      }
+    }
   });
-
-  console.log('ending loop');
 }
 
-function postListening(mdLinks, sites) {
-  console.log('Example app listening on port 3000!');
-  execSync('mkdir -p local');
-  console.log('mkdir -p local');
-  downloadFromLocalServer(mdLinks, sites);
-  console.log('closing server');
-  server.close();
-  console.log('Closed!');
-}
 
 fs.readFile(paths.markdownSource + 'links.md', 'utf8', (err, data) => {
   if (err) {
     return console.log(err);
   }
-
-  var app = express();
-  app.use('/local', express.static(path.join(__dirname + '/tmp/local/')));
-  app.get('/', function(req, res) {
-    res.send('<p>It Works!</p>');
-  });
-  console.log('use ' + path.join(__dirname + '/tmp/local/'));
-  var sites = offlineLinks.prerendered || [];
-  var server = app.listen(3000, () => postListening(getLinksFromMarkdownList(data), sites));
-  var server = app.listen(3000);
+  exec('mkdir -p local', () =>
+    exec('touch cookies.txt', { cwd: 'local' }, () =>
+      downloadSimpleSitesViaProxy(getLinksFromMarkdownList(data), offlineLinks.prerendered || [], () => {
+        console.log('Done!');
+      })
+    )
+  );
 });
