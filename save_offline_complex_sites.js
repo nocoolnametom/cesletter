@@ -1,158 +1,116 @@
 'use strict';
 
 var phantom = require('phantom');
-var exec = require('child_process').exec;
-var execSync = require('child_process').execSync;
-var fs = require('fs');
-var paths = require('./utils/paths');
-var offlineLinks = require(paths.markdownSource + 'offline_links.json');
-var getLinksFromMarkdownList = require('./utils/getLinksFromMarkdownList');
+var fork = require('child_process').fork;
 var Proxy = require('http-mitm-proxy');
 var proxy = Proxy();
 
 var port = 1337;
 
-function downloadSimpleSitesViaProxy(links, sites, success) {
-  var count = 0;
-  sites.forEach(site => {
-    const url = site.overwriteUrl || (links.reduce((prev, link) => {
-      return (link.name === site.name) ? link.url : prev;
-    }, false));
-
-    var wgetCmd = [
-      'wget',
-      '-e use_proxy=yes',
-      '-e http_proxy=localhost:' + port,
-      '-e https_proxy=localhost:' + port,
-      '--no-check-certificate',
-      '--page-requisites',
-      '--adjust-extension',
-      '--convert-links',
-      '--span-hosts',
-      '--backup-converted',
-      '--load-cookies cookies.txt',
-      '--save-cookies cookies.txt',
-      '--header="User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.11 '
-        + '(KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11"',
-      '--header="Referer: http://xmodulo.com/"',
-      '-e robots=off',
-      '"' + url + '"'
-    ].join(' ');
-
-    exec('touch cookies.txt', { cwd: 'local' }, () => {
-      exec(wgetCmd, {
-        cwd: 'local',
-        timeout: 1000 * 60,
-      }, () => {
-        const lastSite = ++count === sites.length;
-        if (site.moveFromPath && site.moveFromPath.length) {
-          var mvCmd = [
-            'mv',
-            '"' + site.moveFromPath + '"',
-            '"' + site.offlinePath + '"'
-          ].join(' ');
-          exec(mvCmd, { cwd: 'local' }, () => {
-            if (lastSite && typeof success === 'function') {
-              exec('rm cookies.txt', { cwd: 'local' });
-              success();
-            }
-          });
-        } else {
-          if (lastSite && typeof success === 'function') {
-            exec('rm cookies.txt', { cwd: 'local' });
-            success();
-          }
-        }
-      });
-    });
-  });
-}
-
 proxy.onError(function(ctx, err, errorKind) {
   // ctx may be null
-  var url = (ctx && ctx.clientToProxyRequest) ? ctx.clientToProxyRequest.url : '';
-  console.error(errorKind + ' on ' + url + ':', err);
+  var url = (ctx && ctx.clientToProxyRequest) ? ' on ' + ctx.clientToProxyRequest.url : '';
+  var ctxOutput = (ctx && ctx.clientToProxyRequest) ? ctx.clientToProxyRequest : '';
+  if (url) {
+    console.error(errorKind + url + ':', err, ctxOutput);
+  }
 });
 
 proxy.use(Proxy.gunzip);
 
 proxy.onRequest(function(ctx, callback) {
   var chunks = [];
-  ctx.onResponseData(function(ctx, chunk, callback) {
-    chunks.push(chunk);
-    return callback(null, null); // don't write chunks to client response
-  });
-  ctx.onResponseEnd(function(ctx, callback) {
-    var body = Buffer.concat(chunks);
+  var cesLetterPath = ctx.clientToProxyRequest.headers['cesletter-path'];
 
-    if (
-      ctx.serverToProxyResponse.headers['content-type']
-      && ctx.serverToProxyResponse.headers['content-type'].indexOf('text/html') === 0
-    ) {
-      var url = 'http://' + ctx.clientToProxyRequest.headers.host + ctx.clientToProxyRequest.url;
-      var sitepage = null;
-      var phInstance = null;
-      var promise = phantom.create([
-        '--ignore-ssl-errors=yes',
-        '--load-images=no',
-      ]);
+  if (cesLetterPath === ctx.clientToProxyRequest.url) {
+    ctx.onResponseData(function(ctx, chunk, callback) {
+      chunks.push(chunk);
+      return callback(null, null); // don't write chunks to client response
+    });
+    ctx.onResponseEnd(function(ctx, callback) {
+      var body = Buffer.concat(chunks);
+      var url = ctx.proxyToServerRequestOptions.agent.protocol
+          + '//' + ctx.proxyToServerRequestOptions.headers.host + ctx.proxyToServerRequestOptions.path;
 
-      promise.then(instance => {
-        phInstance = instance;
-        return instance.createPage();
-      })
-      .then(page => {
-        sitepage = page;
-        page.property('onError', function () {});
-        return page.open(url);
-      })
-      .then(status => {
-        if (status.trim() === 'fail') {
-          console.log('Failed ', url);
-        }
-        return sitepage.property('content');
-      })
-      .then(content => {
-        sitepage.close();
-        phInstance.exit();
-        ctx.proxyToClientResponse.write(content);
+      if (
+        ctx.serverToProxyResponse.headers['content-type']
+        && ctx.serverToProxyResponse.headers['content-type'].indexOf('text/html') === 0
+      ) {
+        var sitepage = null;
+        var phInstance = null;
+        var promise = phantom.create([
+          '--ignore-ssl-errors=yes',
+        ]);
+
+        promise.then(instance => {
+          phInstance = instance;
+          return instance.createPage();
+        })
+        .then(page => {
+          sitepage = page;
+          page.property('onError', function () {
+            throw new Error('Failed ' + url)
+          });
+          return page.open(url);
+        })
+        .then(status => {
+          if (status.trim() === 'fail') {
+            throw new Error('Failed ' + url);
+          }
+          sitepage.evaluate(function () {
+            function writeToConsole() {
+              setTimeout(function () {
+                console.log('page loaded');
+              }, 5000);
+            }
+            if (document.readyState === 'complete') {
+              writeToConsole();
+            } else {
+              window.onload = function () {
+                writeToConsole();
+              }
+            }
+          });
+          sitepage.on('onConsoleMessage', false, () => {
+            sitepage.off('onConsoleMessage');
+            sitepage.evaluate(function () {
+              return document.getElementsByTagName('html')[0].innerHTML;
+            }).then(function(html) {
+              ctx.proxyToClientResponse.write(html);
+              callback();
+            }).then(() => {
+              sitepage.close();
+              phInstance.exit();
+            });
+          })
+        })
+        .catch(error => {
+          console.log(error);
+          phInstance.exit();
+        });
+      } else {
+        console.log('proxied', url);
+        ctx.proxyToClientResponse.write(body);
         return callback();
-      })
-      .catch(error => {
-        phInstance.exit();
-        return callback();
-      });
-    } else {
-      ctx.proxyToClientResponse.write(body);
-      return callback();
-    }
-  });
+      }
+    });
+  }
+
   callback();
 });
 
 
-fs.readFile(paths.markdownSource + 'links.md', 'utf8', (err, data) => {
-  if (err) {
-    return console.log(err);
-  }
-
-  proxy.listen({
-    port: port,
-    silent: true, 
-  }, () => {
-    setTimeout(() => {
-      exec('mkdir -p local', () =>
-        downloadSimpleSitesViaProxy(getLinksFromMarkdownList(data), offlineLinks.prerendered || [], () => {
-          setTimeout(() => {
-            console.log('Closing proxy...');
-            proxy.close();
-          }, 1000 * 300); // Give the server another 20 seconds to process any remaining fetch events.
-        })
-      );
-    }, 2000);
-  });
+proxy.listen({
+  port: port,
+  silent: true,
+}, () => {
+  setTimeout(() => {
+    var saving = fork('save_offline_from_server.js');
+    saving.on('close', (code) => {
+      proxy.close();
+    });
+  }, 2000);
 });
-
 /* Okay, this works!  The process is such: use this file to download the source at page ready
 
 ```

@@ -53,6 +53,7 @@
     "serve-static": "^1.11.1"
   },
   "dependencies": {
-    "http-mitm-proxy": "^0.5.1"
+    "http-mitm-proxy": "^0.5.1",
+    "node-forge": "^0.6.42"
   }
 }

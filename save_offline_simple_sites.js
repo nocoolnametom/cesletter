@@ -37,7 +37,6 @@ function downloadSimpleSites(links, sites) {
             '"' + site.moveFromPath + '"',
             '"' + site.offlinePath + '"',
           ].join(' ')
-          console.log(mvCmd);
           exec(mvCmd, { cwd: 'local' });
         }
       });
