@@ -1,45 +1,56 @@
-'use strict';
+/* @flow */
+/* eslint func-names:0 no-console:0 */
+const phantom = require('phantom'); // eslint-disable-line import/no-extraneous-dependencies
+const fork = require('child_process').fork;
+const paths = require('./utils/paths');
+const mitmProxy =
+  require('http-mitm-proxy'); // eslint-disable-line import/no-extraneous-dependencies
 
-var phantom = require('phantom');
-var fork = require('child_process').fork;
-var Proxy = require('http-mitm-proxy');
-var proxy = Proxy();
+const proxy = mitmProxy();
 
-var port = 1337;
+const port = 1337;
 
-proxy.onError(function(ctx, err, errorKind) {
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
+proxy.onError((ctx, err, errorKind) => {
   // ctx may be null
-  var url = (ctx && ctx.clientToProxyRequest) ? ' on ' + ctx.clientToProxyRequest.url : '';
-  var ctxOutput = (ctx && ctx.clientToProxyRequest) ? ctx.clientToProxyRequest : '';
+  const url = (ctx && ctx.clientToProxyRequest) ? ` on ${ctx.clientToProxyRequest.url}` : '';
   if (url) {
-    console.error(errorKind + url + ':', err, ctxOutput);
+    console.error(`${errorKind}${url}:`, err);
   }
 });
 
-proxy.use(Proxy.gunzip);
+proxy.use(mitmProxy.gunzip);
 
-proxy.onRequest(function(ctx, callback) {
-  var chunks = [];
-  var cesLetterPath = ctx.clientToProxyRequest.headers['cesletter-path'];
+proxy.onRequest((connection, proxyCallback) => {
+  const chunks = [];
+  const cesLetterPath = connection.clientToProxyRequest.headers['cesletter-path'];
+  connection.proxyToServerRequestOptions.rejectUnauthorized // eslint-disable-line no-param-reassign
+    = false;
 
-  if (cesLetterPath === ctx.clientToProxyRequest.url) {
-    ctx.onResponseData(function(ctx, chunk, callback) {
+  if (cesLetterPath === connection.clientToProxyRequest.url) {
+    connection.onResponseData((ctx, chunk, callback) => {
       chunks.push(chunk);
       return callback(null, null); // don't write chunks to client response
     });
-    ctx.onResponseEnd(function(ctx, callback) {
-      var body = Buffer.concat(chunks);
-      var url = ctx.proxyToServerRequestOptions.agent.protocol
-          + '//' + ctx.proxyToServerRequestOptions.headers.host + ctx.proxyToServerRequestOptions.path;
+    connection.onResponseEnd((ctx, callback) => {
+      const body = Buffer.concat(chunks);
+      const url = [
+        ctx.proxyToServerRequestOptions.agent.protocol,
+        '//',
+        ctx.proxyToServerRequestOptions.headers.host,
+        ctx.proxyToServerRequestOptions.path,
+      ].join('');
 
       if (
         ctx.serverToProxyResponse.headers['content-type']
         && ctx.serverToProxyResponse.headers['content-type'].indexOf('text/html') === 0
       ) {
-        var sitepage = null;
-        var phInstance = null;
-        var promise = phantom.create([
+        let sitepage = null;
+        let phInstance = null;
+        const promise = phantom.create([
           '--ignore-ssl-errors=yes',
+          `--cookies-file=${paths.offlineStorage}cookies.txt`,
         ]);
 
         promise.then(instance => {
@@ -48,93 +59,84 @@ proxy.onRequest(function(ctx, callback) {
         })
         .then(page => {
           sitepage = page;
-          page.property('onError', function () {
-            throw new Error('Failed ' + url)
+          page.property('onError', function () { // eslint-disable-line prefer-arrow-callback
+            throw new Error('Errored ' + url); // eslint-disable-line prefer-template
           });
           return page.open(url);
         })
         .then(status => {
           if (status.trim() === 'fail') {
-            throw new Error('Failed ' + url);
+            throw new Error(`Failed ${url}`);
           }
-          sitepage.evaluate(function () {
-            function writeToConsole() {
-              setTimeout(function () {
-                console.log('page loaded');
-              }, 5000);
-            }
-            if (document.readyState === 'complete') {
-              writeToConsole();
-            } else {
-              window.onload = function () {
-                writeToConsole();
+          if (sitepage && sitepage.evaluate && typeof sitepage.evaluate === 'function') {
+            sitepage.evaluate(function () { // eslint-disable-line prefer-arrow-callback
+              function writeToConsole() {
+                setTimeout(function () { // eslint-disable-line prefer-arrow-callback
+                  console.log('page loaded');
+                }, 5000);
               }
-            }
-          });
-          sitepage.on('onConsoleMessage', false, () => {
-            sitepage.off('onConsoleMessage');
-            sitepage.evaluate(function () {
-              return document.getElementsByTagName('html')[0].innerHTML;
-            }).then(function(html) {
-              ctx.proxyToClientResponse.write(html);
-              callback();
-            }).then(() => {
-              sitepage.close();
-              phInstance.exit();
+              if (document.readyState === 'complete') {
+                writeToConsole();
+              } else {
+                window.onload = function () {
+                  writeToConsole();
+                };
+              }
             });
-          })
+          }
+          if (sitepage && sitepage.on && typeof sitepage.on === 'function') {
+            sitepage.on('onConsoleMessage', false, () => {
+              if (sitepage && sitepage.off && typeof sitepage.off === 'function') {
+                sitepage.off('onConsoleMessage');
+              }
+              if (sitepage && sitepage.evaluate && typeof sitepage.evaluate === 'function') {
+                sitepage.evaluate(function () { // eslint-disable-line prefer-arrow-callback
+                  return document.getElementsByTagName('html')[0].innerHTML;
+                }).then(html => {
+                  ctx.proxyToClientResponse.write(html);
+                  callback();
+                }).then(() => {
+                  if (sitepage && sitepage.close && typeof sitepage.close === 'function') {
+                    sitepage.close();
+                  }
+                  if (phInstance && phInstance.exit && typeof phInstance.exit === 'function') {
+                    phInstance.exit();
+                  }
+                });
+              }
+            });
+          }
         })
         .catch(error => {
           console.log(error);
-          phInstance.exit();
+          if (phInstance && phInstance.exit && typeof phInstance.exit === 'function') {
+            phInstance.exit();
+          }
         });
       } else {
         console.log('proxied', url);
         ctx.proxyToClientResponse.write(body);
-        return callback();
+        callback();
       }
     });
   }
 
-  callback();
+  proxyCallback();
 });
 
-
+console.log('Staring proxy for prerendering sites...');
 proxy.listen({
-  port: port,
+  port,
+  forceSNI: true,
   silent: true,
 }, () => {
+  console.log('Stared proxy!');
   setTimeout(() => {
-    var saving = fork('save_offline_from_server.js');
-    saving.on('close', (code) => {
+    const saving = fork('save_offline_from_server.js');
+    saving.on('close', () => {
+      console.log('Stopping proxy...');
       proxy.close();
+      console.log('Stopped proxy!');
     });
   }, 2000);
 });
-/* Okay, this works!  The process is such: use this file to download the source at page ready
-
-```
-phantomjs save_page.js http://www.lds.org/scriptures/ot/num/21.5-9?lang=eng > page.html ; // This output name should be unique as it will be the entry point for the offline file.
-```
-
-Then you can use wget or httrack to download the page with resources:
-
-```
-python -m SimpleHTTPServer ; // Start a server; should look into using Node for this one.
-```
-
-```
-wget -e robots=off --adjust-extension --span-hosts --convert-links --backup-converted --page-requisites http://localhost:8000/page.html;
-```
-
-The resulting files are placed in directories relative to the local file, and the "downloaded" file is put in 
-
-```
-./localhost:8000/page.html
-```
-
-You can then load that page and you'll get the offline version!
-
-Now to just automate the process using the links.md list, as well as using youtuble-dl to download the YouTube videos.
-
-*/

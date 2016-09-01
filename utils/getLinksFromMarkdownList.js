@@ -1,12 +1,13 @@
-function getLinksFromMarkdownList(list) {
-  var linkParser = new RegExp(/\[([^\]]+)\]:\s*([^"'\n]+)(["'][^"']+["'])?/);
-  var globalParser = new RegExp(/\[([^\]]+)\]:\s*([^"'\n]+)(["'][^"']+["'])?/g);
+/* @flow */
+function getLinksFromMarkdownList(list: string): Array<{name: string, url: string}> {
+  const linkParser = new RegExp(/\[([^\]]+)\]:\s*([^"'\n]+)(["'][^"']+["'])?/);
+  const globalParser = new RegExp(/\[([^\]]+)\]:\s*([^"'\n]+)(["'][^"']+["'])?/g);
 
-  return list.match(globalParser).map(link => {
-    var linkInfo = link.match(linkParser);
+  return (list.match(globalParser) || []).map(link => {
+    const linkInfo = link.match(linkParser);
     return {
-      name: linkInfo[1],
-      url: linkInfo[2]
+      name: linkInfo && linkInfo[1] ? linkInfo[1] : '',
+      url: linkInfo && linkInfo[2] ? linkInfo[2] : '',
     };
   });
 }

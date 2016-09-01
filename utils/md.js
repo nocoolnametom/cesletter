@@ -1,79 +1,77 @@
-var paths = require('./paths');
-var md = require('markdown-it')({
+/* @flow */
+/* eslint no-console:0 import/no-extraneous-dependencies:0 */
+const paths = require('./paths');
+const md = require('markdown-it')({
   html: true,
-  typographer: true
+  typographer: true,
 });
 
-md.use(require('markdown-it-front-matter'), function(fm) {
-    console.log(fm);
-  })
+md.use(require('markdown-it-front-matter'), fm => console.log(fm))
   .use(require('markdown-it-container'), 'header', {
-    render: function (tokens, idx) {
+    render(tokens, idx) {
       if (tokens[idx].nesting === 1) {
-        // opening tag 
+        // opening tag
         return '<header>\n';
-  
-      } else {
-        // closing tag 
-        return '</header>\n<div class="mainLetter">\n';
       }
-    }
+      // closing tag
+      return '</header>\n<div class="mainLetter">\n';
+    },
   })
   .use(require('markdown-it-container'), 'centered', {
-    render: function (tokens, idx) {
+    render(tokens, idx) {
       if (tokens[idx].nesting === 1) {
-        // opening tag 
+        // opening tag
         return '<div class="centered">\n';
-  
-      } else {
-        // closing tag 
-        return '</div>\n';
       }
-    }
+
+      // closing tag
+      return '</div>\n';
+    },
   })
   .use(require('markdown-it-container'), 'pictureGroup', {
-    validate: function(params) {
+    validate(params) {
       return params.trim().match(/^pictureGroup\s+(.*)$/);
     },
-    render: function (tokens, idx) {
-      var m = tokens[idx].info.trim().match(/^pictureGroup\s+(.*)$/);
-  
+    render(tokens, idx) {
+      const m = tokens[idx].info.trim().match(/^pictureGroup\s+(.*)$/);
+
       if (tokens[idx].nesting === 1) {
-        // opening tag 
-        return '<div class="pictureGroup pictureGroup' + m[1] + '">\n';
-  
-      } else {
-        // closing tag 
-        return '</div>\n';
+        // opening tag
+        return `<div class="pictureGroup pictureGroup${m[1]}">\n`;
       }
-    }
+
+      // closing tag
+      return '</div>\n';
+    },
   })
   .use(require('markdown-it-container'), 'footer', {
-    render: function (tokens, idx) {
+    render(tokens, idx) {
       if (tokens[idx].nesting === 1) {
-        // opening tag 
+        // opening tag
         return '</div><footer>\n';
-  
-      } else {
-        // closing tag 
-        return '</footer>\n';
       }
-    }
+
+      // closing tag
+      return '</footer>\n';
+    },
   })
   .use(require('mdfigcaption'))
   .use(require('markdown-it-center-text'))
   .use(require('markdown-it-decorate'), {})
   .use(require('markdown-it-block-image'), {
     outputContainer: 'p',
-    containerClassName: "caption"
+    containerClassName: 'caption',
   })
   .use(require('markdown-it-block-embed'), {
     width: 480,
     height: 360,
     containerClassName: 'blockEmbed',
-    serviceClassPrefix: 'blockEmbedService'
+    serviceClassPrefix: 'blockEmbedService',
   })
-  .use(require('markdown-it-link-target'))
+  .use(require('markdown-it-link-attributes'), {
+    target: '_blank',
+    rel: 'noopener',
+  })
   .use(require('markdown-it-sup-alt'))
   .use(require('markdown-it-include'), paths.markdownSource);
 

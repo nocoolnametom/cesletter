@@ -1,90 +1,110 @@
-var exec = require('child_process').exec;
-var crypto = require('crypto');
-var fs = require('fs');
-var paths = require('./utils/paths');
-var offlineLinks = require(paths.markdownSource + 'offline_links.json');
-var getLinksFromMarkdownList = require('./utils/getLinksFromMarkdownList');
+/* @flow */
+/* eslint no-console:0 */
+const exec = require('child_process').exec;
+const crypto = require('crypto');
+const fs = require('fs');
+const paths = require('./utils/paths');
+const offlineLinks = require('./src/md/offline_links.json');
+const getLinksFromMarkdownList = require('./utils/getLinksFromMarkdownList');
+const addRepeats = require('./utils/addRepeats');
 
-var youtubeDlExec = [
-  "youtube-dl",
+const youtubeDlExec = [
+  'youtube-dl',
   "-f 'best[height<=240]'",
-  "--recode-video mp4",
+  '--recode-video mp4',
 ];
 
-function shortenVideo(tempName, start, end, offlinePath) {
-  var ffmepgCmd = [
+function shortenVideo(tempName, start, end, offlinePath, callback) {
+  const success = typeof callback === 'function' ? callback : () => {};
+  const ffmepgCmd = [
     'ffmpeg',
     '-y',
     '-i',
-    tempName + '.mp4',
+    `"${tempName}.mp4"`,
     '-ss',
     start || 0,
-    end ? '-to ' + end : '',
+    end ? `-to ${end}` : '',
     '-async 1',
-    offlinePath
+    `"${offlinePath}"`,
   ].join(' ');
 
   exec(ffmepgCmd, {
-    cwd: "local",
+    cwd: paths.offlineStorage,
   }, (err) => {
     if (err) {
-      return console.log(err);
+      console.log(err);
     }
-    exec('rm ' + tempName + '.mp4', {
-      cwd: "local",
-    });
+    exec(`rm "${tempName}.mp4"`, {
+      cwd: paths.offlineStorage,
+    }, success);
   });
 }
 
-function moveVideo(tempName, offlinePath) {
-  var moveCmd = [
+function moveVideo(tempName, offlinePath, callback) {
+  const success = typeof callback === 'function' ? callback : () => {};
+  const moveCmd = [
     'mv',
-    tempName + '.mp4',
-    offlinePath
+    `"${tempName}.mp4"`,
+    `"${offlinePath}"`,
   ].join(' ');
 
   exec(moveCmd, {
-    cwd: "local",
+    cwd: paths.offlineStorage,
   }, (err) => {
     if (err) {
-      return console.log(err);
+      console.log(err);
     }
-    exec('rm ' + tempName + '.mp4', {
-      cwd: "local",
-    });
+    exec(`rm "${tempName}.mp4"`, {
+      cwd: paths.offlineStorage,
+    }, success);
   });
 }
 
 function downloadVideos(links, videos) {
+  let count = 0;
   videos.forEach((video, i) => {
-    const url = video.overwriteUrl || (links.reduce(prev, link => {
-      return (link.name === video.name) ? link.url : prev;
+    const url = video.overwriteUrl || (links.reduce((prev, link) => {
+      if (link.name === video.name) {
+        return link.url;
+      }
+
+      return prev;
     }, false));
 
-    var tempName = crypto.createHash('md5').update(url + i).digest('hex');
-    var outputPath = "'" + crypto.createHash('md5').update(url + i).digest('hex') + ".%(ext)s'";
+    const tempName = crypto.createHash('md5').update(url + i).digest('hex');
 
-    var youTubeDlCmd = youtubeDlExec.concat([
-      '-o ' + outputPath,
-      url
+    const youTubeDlCmd = youtubeDlExec.concat([
+      `-o "${tempName}.%(ext)s"`,
+      url,
     ]).join(' ');
 
-    postDownload = (video.start || video.end)
-      ? () => shortenVideo(tempName, video.start, video.end, video.offlinePath)
-      : () => moveVideo(tempName, video.offlinePath);
+    const success = () => {
+      console.log('Finished', ++count, 'of', videos.length);
+      if (count === videos.length) {
+        console.log('Finished offline videos!');
+      }
+    };
+
+    const postDownload = (video.start || video.end)
+      ? () => shortenVideo(tempName, video.start, video.end, video.offlinePath, success)
+      : () => moveVideo(tempName, video.offlinePath, success);
 
     exec(youTubeDlCmd, {
-      cwd: "local",
+      cwd: paths.offlineStorage,
     }, postDownload);
   });
 }
 
-fs.readFile(paths.markdownSource + 'links.md', 'utf8', (err, data) => {
+fs.readFile(`${paths.markdownSource}links.md`, 'utf8', (err, data) => {
   if (err) {
-    return console.log(err);
+    console.log(err);
   }
 
-  exec('mkdir -p local', () =>
-    downloadVideos(getLinksFromMarkdownList(data), offlineLinks.videos || [])
-  );
+  exec(`mkdir -p ${paths.offlineStorage}`, () => {
+    console.log('Starting offline videos...');
+    downloadVideos(
+      getLinksFromMarkdownList(data),
+      addRepeats(offlineLinks.videos || [])
+    );
+  });
 });
