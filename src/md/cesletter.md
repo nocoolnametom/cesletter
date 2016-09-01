@@ -189,7 +189,7 @@ The following issues are among my main concerns:
     Off the eastern coast of Mozambique in Africa is an island country called "[Comoros][Wikipedia: Comoros]." Prior to its French occupation in 1841, the islands were known by its Arabic name, "Camora." There is an 1808 map of Africa that refers to the islands as "Camora."
 
     ![1808 Map of Africa][]
-    Camora is near center in the above [1808 Map of Africa][1808 Map of Africa]<!-- {p:.caption.boxed} -->
+    Camora is near center in the above [1808 Map of Africa][1808 Map of Africa Link]<!-- {p:.caption.boxed} -->
 
     The largest city and capital of Comoros (formerly "Camora")? [Moroni][Wikipedia: Moroni, Comoros]. "Camora" and settlement "Moroni" were common names in pirate and treasure hunting stories involving Captain William Kidd (a pirate and treasure hunter) which many 19^th^ century New Englanders—especially treasure hunters—were familiar with.
 
@@ -836,7 +836,7 @@ A rock he [found digging in his neighbor's property][LDS Essay: Book of Mormon T
 This thought–provoking video raises some profound questions and challenges to the Latter-day Saint concept of “testimony” and receiving a witness from the Holy Ghost or Spirit as being a unique, reliable, and trustworthy source to discerning truth and reality:
 
 ::: centered
-!!!include(playbutton.svg)!!!
+!!!include(playbutton_follow.svg)!!!
 
 [![Follow the Spirit Thumbnail][]][Youtube: Follow the Spirit]<!--{image:.boxed}-->
 :::
@@ -1439,7 +1439,7 @@ These concerns are secondary to all of the above. These concerns do not matter i
         > — [<small>Boyd K. Packer, All-Church Coordinating Council, May 18, 1993</small>][Article: Talk to the All-Church Coordinating Council]
 
      *  [Strengthening the Church Members Committee (SCMC)][Wikipedia: Strengthening the Church Members Committee]:  
-        The spying and monitoring arm of the Church. It is secretive and most members have been unaware of its existence since its creation in 1985 after President Ezra Taft Benson took over. [Elder Jeffrey R. Holland admitted it still exists][Youtube: Elder Holland Discusses the SCMC] (<span class="crimson">2:29</span>) in March 2012. The historical evidence and the September Six points to SCMC's primary mission being to hunt and expose intellectuals and/or disaffected members who are influencing other members to think and question, despite Holland's claim that it's a committee primarily to fight against polygamy.
+        The spying and monitoring arm of the Church. It is secretive and most members have been unaware of its existence since its creation in 1985 after President Ezra Taft Benson took over. [Elder Jeffrey R. Holland admitted it still exists][Youtube: Elder Holland Discusses the SCMC] (<span class="crimson">5:42</span>) in March 2012. The historical evidence and the September Six points to SCMC's primary mission being to hunt and expose intellectuals and/or disaffected members who are influencing other members to think and question, despite Holland's claim that it's a committee primarily to fight against polygamy.
 
     <h4>"When the prophet speaks the debate is over":</h4>
 
@@ -1532,7 +1532,7 @@ Click on graphics below to access each respective response:
 ->Click below to view my interview with Mormon Stories John Dehlin:<-
 
 ::: centered
-!!!include(playbutton.svg)!!!
+!!!include(playbutton_interview.svg)!!!
 
 [![Mormon Stories Interview Thumbnail][]][Youtube: Mormon Stories Interview with Jeremy Runnells]<!--{image:.boxed}-->
 :::

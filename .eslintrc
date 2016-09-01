@@ -1,0 +1,15 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb"],
+  "rules": { },
+  "settings": {
+    "ecmascript": 6
+  },
+  "globals": {
+    "require": false
+  },
+  "env": {
+    "node": true,
+    "browser": true
+  }
+}

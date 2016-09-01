@@ -1,6 +1,10 @@
+/* @flow */
+/* eslint no-var:0 */
 var applyResponsiveTableClassNames = require('./applyResponsiveTableClassNames');
-var domready = require('domready');
+var ifOfflineTranslateBadLinks = require('./ifOfflineTranslateBadLinks');
+var domready = require('domready'); // eslint-disable-line import/no-extraneous-dependencies
 
-domready(function () {
-    applyResponsiveTableClassNames();
+domready(() => {
+  ifOfflineTranslateBadLinks();
+  applyResponsiveTableClassNames();
 });

@@ -1,24 +1,34 @@
-var fs = require('fs');
-var paths = require('./utils/paths');
-var md = require('./utils/md');
-var Handlebars = require('handlebars');
+/* @flow */
+/* eslint no-console:0 import/no-extraneous-dependencies:0 */
+const fs = require('fs');
+const paths = require('./utils/paths');
+const exec = require('child_process').exec;
+const md = require('./utils/md');
+const Handlebars = require('handlebars');
 
-fs.readFile(paths.markdownSource + 'cesletter.md', 'utf8', function (err, data) {
+fs.readFile(`${paths.markdownSource}cesletter.md`, 'utf8', (err, data) => {
   if (err) {
-    return console.log(err);
+    console.log(err);
   }
-  htmlOutput = md.render(data);
-  fs.readFile(paths.htmlSource + 'index.hbs', 'utf8', function (err, data) {
-    var template = Handlebars.compile(data);
-    var result = template({
-      markdownBody: htmlOutput
-    });
-    fs.writeFile(paths.distribution + "./index.html", result, function(err) {
-      if(err) {
-          return console.log(err);
-      }
+  const htmlOutput = md.render(data);
+  fs.readFile(`${paths.htmlSource}index.hbs`, 'utf8', (templateReadErr, templateData) => {
+    if (templateReadErr) {
+      console.log(templateReadErr);
+    }
 
-      console.log("The file was saved!");
+    const template = Handlebars.compile(templateData);
+    const result = template({
+      markdownBody: htmlOutput,
     });
-  }); 
+
+    exec(`mkdir -p ${paths.distribution}`, () => {
+      fs.writeFile(`${paths.distribution}index.html`, result, (writeErr) => {
+        if (writeErr) {
+          console.log(writeErr);
+        }
+
+        console.log('The file was saved!');
+      });
+    });
+  });
 });

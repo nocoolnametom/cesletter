@@ -40,4 +40,4 @@ jspm_packages
 .http-mitm-Proxy
 
 # Offline webpages
-local
+dist/local

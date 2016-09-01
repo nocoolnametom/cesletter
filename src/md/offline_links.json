@@ -11,21 +11,17 @@
   ],
   "oneLevelDeepSites": [
     {
-      "name": "History of the Church 3:232",
-      "offlinePath": "historyofthechurch.html"
+      "name": "Debunking Fairs Debunking",
+      "offlinePath": "cesletter.com/debunking-fairmormon/index.html"
     },
     {
-      "name": "History of the Church 3:307-308",
-      "offlinePath": "historyofthechurch.html"
-    },
-    {
-      "name": "History of the Church 6:411",
-      "offlinePath": "historyofthechurch.html"
+      "name": "The Journey",
+      "offlinePath": "20truths.info/mormon/story.html"
     }
   ],
   "files" : [
     {
-      "name": "1808 Map of Africa",
+      "name": "1808 Map of Africa Link",
       "offlinePath": "africa_1808.jpg"
     },
     {
@@ -169,23 +165,41 @@
     },
     {
       "name": "FamilySearch: Eliza R. Snow",
-      "offlinePath": "familysearch.org/pal:/MM9.2.1/M18Z-MRT.html"
+      "offlinePath": "familysearch.org/ark:/61903/2:1:M18Z-MRT.html"
     },
     {
       "name": "FamilySearch: Helen Mar Kimball",
-      "offlinePath": "familysearch.org/pal:/MM9.2.1/M18K-6J5.html"
+      "offlinePath": "familysearch.org/ark:/61903/2:2:M18K-6J5.html"
     },
     {
       "name": "FamilySearch: Joseph Smith",
-      "offlinePath": "familysearch.org/pal:/MM9.2.1/M18D-5C8.html"
+      "offlinePath": "familysearch.org/ark:/61903/2:1:M18D-5C8.html"
     },
     {
       "name": "FamilySearch: Sarah Ann Whitney",
-      "offlinePath": "familysearch.org/pal:/MM9.2.1/M18Z-MTZ.html"
+      "offlinePath": "familysearch.org/ark:/61903/2:1:M18Z-MTZ.html"
     },
     {
       "name": "FamilySearch: Zina H. Young",
-      "offlinePath": "familysearch.org/pal:/MM9.2.1/M18Z-MPT.html"
+      "offlinePath": "familysearch.org/ark:/61903/2:1:M18Z-MPT.html"
+    },
+    {
+      "name": "History of the Church 3:232",
+      "overwriteUrl": "https://byustudies.byu.edu/content/volume-3-chapter-15",
+      "offlineAppend": "#232",
+      "offlinePath": "byustudies.byu.edu/content/volume-3-chapter-15.html"
+    },
+    {
+      "name": "History of the Church 3:307-308",
+      "overwriteUrl": "https://byustudies.byu.edu/content/volume-3-chapter-21",
+      "offlineAppend": "#307",
+      "offlinePath": "byustudies.byu.edu/content/volume-3-chapter-21.html"
+    },
+    {
+      "name": "History of the Church 6:411",
+      "overwriteUrl": "https://byustudies.byu.edu/content/volume-6-chapter-19",
+      "offlineAppend": "#411",
+      "offlinePath": "byustudies.byu.edu/content/volume-6-chapter-19.html"
     },
     {
       "name": "Joseph Smith Papers: 1835 D&C 101:4",
@@ -244,7 +258,7 @@
     {
       "name": "Joseph Smith Papers: Original Book of Mormon, pg. 535",
       "overwriteUrl": "http://www.josephsmithpapers.org/paperSummary/book-of-mormon-1830?dm=text&p=535",
-      "moveFromPath":  "www.josephsmithpapers.org/paperSummary/book-of-mormon-1830?dm=text&p=38.html",
+      "moveFromPath":  "www.josephsmithpapers.org/paperSummary/book-of-mormon-1830?dm=text&p=535.html",
       "offlinePath": "www.josephsmithpapers.org/paperSummary/book-of-mormon-1830_535.html"
     },
     {
@@ -255,6 +269,7 @@
     },
     {
       "name": "LDS Callings: Relief Society President Zina H. Young",
+      "moveFromPath": "www.lds.org/callings/relief-society/relief-society-presidents/zina-h-young?lang=eng.html",
       "offlinePath": "www.lds.org/callings/relief-society/relief-society-presidents/zina-h-young.html"
     },
     {
@@ -288,248 +303,287 @@
     },
     {
       "name": "LDS Scriptures: 1 Nephi 11:18",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_bofm_1-ne_1118.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/1-ne/11.18?lang=eng.html",
+      "offlineAppend": "#17",
+      "offlinePath": "www.lds.org/scriptures/bofm/1-ne/11.18.html"
     },
     {
       "name": "LDS Scriptures: 1 Nephi 11:21",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_bofm_1-ne_1121.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/1-ne/11.21?lang=eng.html",
+      "offlineAppend": "#20",
+      "offlinePath": "www.lds.org/scriptures/bofm/1-ne/11.21.html"
     },
     {
       "name": "LDS Scriptures: 1 Nephi 11:32",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_bofm_1-ne_1132.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/1-ne/11.32?lang=eng.html",
+      "offlineAppend": "#31",
+      "offlinePath": "www.lds.org/scriptures/bofm/1-ne/11.32.html"
     },
     {
       "name": "LDS Scriptures: 1 Nephi 13:40",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_bofm_1-ne_1340.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/1-ne/13.40?lang=eng.html",
+      "offlineAppend": "#39",
+      "offlinePath": "www.lds.org/scriptures/bofm/1-ne/13.40.html"
     },
     {
       "name": "LDS Scriptures: 1 Nephi 4",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_bofm_1-ne_4.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/1-ne/4?lang=eng.html",
+      "offlinePath": "www.lds.org/scriptures/bofm/1-ne/4.html"
     },
     {
       "name": "LDS Scriptures: 2 Nephi 26:33",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_bofm_2-ne_2633.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/2-ne/26.33?lang=eng.html",
+      "offlineAppend": "#32",
+      "offlinePath": "www.lds.org/scriptures/bofm/2-ne/26.33.html"
     },
     {
       "name": "LDS Scriptures: 2 Nephi 2:22",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_bofm_2-ne_222.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/2-ne/2.22?lang=eng.html",
+      "offlineAppend": "#21",
+      "offlinePath": "www.lds.org/scriptures/bofm/2-ne/2.22.html"
     },
     {
       "name": "LDS Scriptures: 3 Nephi 13:25-27",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_bofm_3-ne_1325-27.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/3-ne/13.25-27?lang=eng.html",
+      "offlineAppend": "#24",
+      "offlinePath": "www.lds.org/scriptures/bofm/3-ne/13.25-27.html"
     },
     {
       "name": "LDS Scriptures: Abraham 1:12",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_pgp_abr_112.html"
+      "moveFromPath": "www.lds.org/scriptures/pgp/abr/1.12?lang=eng.html",
+      "offlineAppend": "#11",
+      "offlinePath": "www.lds.org/scriptures/pgp/abr/1.12.html"
     },
     {
       "name": "LDS Scriptures: Abraham 1:14",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_pgp_abr_114.html"
+      "moveFromPath": "www.lds.org/scriptures/pgp/abr/1.14?lang=eng.html",
+      "offlineAppend": "#13",
+      "offlinePath": "www.lds.org/scriptures/pgp/abr/1.14.html"
     },
     {
       "name": "LDS Scriptures: Abraham",
-      "moveFromPath": "",
-      "offlinePath": "abr_index.html"
+      "moveFromPath": "www.lds.org/scriptures/pgp/abr?lang=eng.html",
+      "offlinePath": "www.lds.org/scriptures/pgp/abr.html"
     },
     {
       "name": "LDS Scriptures: Alma 11:38-39",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_bofm_alma_1138-39.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/alma/11.38-39?lang=eng.html",
+      "offlineAppend": "#37",
+      "offlinePath": "www.lds.org/scriptures/bofm/alma/11.38-39.html"
     },
     {
       "name": "LDS Scriptures: Alma 12:23-24",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_bofm_alma_1223-24.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/alma/12.23-24?lang=eng.html",
+      "offlineAppend": "#22",
+      "offlinePath": "www.lds.org/scriptures/bofm/alma/12.23-24.html"
     },
     {
       "name": "LDS Scriptures: Bible Dictionary Jehovah",
-      "moveFromPath": "",
-      "offlinePath": "bible_dictionary_jehovah.html"
+      "moveFromPath": "www.lds.org/scriptures/bd/jehovah?lang=eng.html",
+      "offlinePath": "www.lds.org/scriptures/bd/jehovah.html"
     },
     {
       "name": "LDS Scriptures: Book of Mormon",
-      "moveFromPath": "",
-      "offlinePath": "bofm_index.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm?lang=eng.html",
+      "offlinePath": "www.lds.org/scriptures/bofm.html"
     },
     {
       "name": "LDS Scriptures: D&C 110:13",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_dc-testament_dc_11013.html"
+      "moveFromPath": "www.lds.org/scriptures/dc-testament/dc/110.13?lang=eng.html",
+      "offlineAppend": "#12",
+      "offlinePath": "www.lds.org/scriptures/dc-testament/dc/110.13.html"
     },
     {
       "name": "LDS Scriptures: D&C 110:1",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_dc-testament_dc_1101.html"
+      "moveFromPath": "www.lds.org/scriptures/dc-testament/dc/110.1?lang=eng.html",
+      "offlineAppend": "#1",
+      "offlinePath": "www.lds.org/scriptures/dc-testament/dc/110.1.html"
     },
     {
       "name": "LDS Scriptures: D&C 132:41",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_dc-testament_dc_13241.html"
+      "moveFromPath": "www.lds.org/scriptures/dc-testament/dc/132.41?lang=eng.html",
+      "offlineAppend": "#40",
+      "offlinePath": "www.lds.org/scriptures/dc-testament/dc/132.41.html"
     },
     {
       "name": "LDS Scriptures: D&C 132:4",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_dc-testament_dc_1324.html"
+      "moveFromPath": "www.lds.org/scriptures/dc-testament/dc/132.4?lang=eng.html",
+      "offlineAppend": "#3",
+      "offlinePath": "www.lds.org/scriptures/dc-testament/dc/132.4.html"
     },
     {
       "name": "LDS Scriptures: D&C 132:61",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_dc-testament_dc_13261.html"
+      "moveFromPath": "www.lds.org/scriptures/dc-testament/dc/132.61?lang=eng.html",
+      "offlineAppend": "#60",
+      "offlinePath": "www.lds.org/scriptures/dc-testament/dc/132.61.html"
     },
     {
       "name": "LDS Scriptures: D&C 132:63",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_dc-testament_dc_13263.html"
+      "moveFromPath": "www.lds.org/scriptures/dc-testament/dc/132.63?lang=eng.html",
+      "offlineAppend": "#62",
+      "offlinePath": "www.lds.org/scriptures/dc-testament/dc/132.63.html"
     },
     {
       "name": "LDS Scriptures: D&C 132",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_dc-testament_dc_132.html"
+      "moveFromPath": "www.lds.org/scriptures/dc-testament/dc/132?lang=eng.html",
+      "offlinePath": "www.lds.org/scriptures/dc-testament/dc/132.html"
     },
     {
       "name": "LDS Scriptures: D&C 77:6-7",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_dc-testament_dc_776-7.html"
+      "moveFromPath": "www.lds.org/scriptures/dc-testament/dc/77.6-7?lang=eng.html",
+      "offlineAppend": "#5",
+      "offlinePath": "www.lds.org/scriptures/dc-testament/dc/77.6-7.html"
     },
     {
       "name": "LDS Scriptures: D&C 8:6-11",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_dc-testament_dc_86-11.html"
+      "moveFromPath": "www.lds.org/scriptures/dc-testament/dc/8.6-11?lang=eng.html",
+      "offlineAppend": "#5",
+      "offlinePath": "www.lds.org/scriptures/dc-testament/dc/8.6-11.html"
     },
     {
       "name": "LDS Scriptures: D&C 8",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_dc-testament_dc_8.html"
+      "moveFromPath": "www.lds.org/scriptures/dc-testament/dc/8?lang=eng.html",
+      "offlinePath": "www.lds.org/scriptures/dc-testament/dc/8.html"
     },
     {
       "name": "LDS Scriptures: D&C 93:36",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_dc-testament_dc_9336.html"
+      "moveFromPath": "www.lds.org/scriptures/dc-testament/dc/93.36?lang=eng.html",
+      "offlineAppend": "#35",
+      "offlinePath": "www.lds.org/scriptures/dc-testament/dc/93.36.html"
     },
     {
       "name": "LDS Scriptures: Deut. 21:18-21",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_ot_deut_2118-21.html"
+      "moveFromPath": "www.lds.org/scriptures/ot/deut/21.18-21?lang=eng.html",
+      "offlineAppend": "#17",
+      "offlinePath": "www.lds.org/scriptures/ot/deut/21.18-21.html"
     },
     {
       "name": "LDS Scriptures: Ether 2:19-20",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_bofm_ether_219-20.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/ether/2.19-20?lang=eng.html",
+      "offlineAppend": "#18",
+      "offlinePath": "www.lds.org/scriptures/bofm/ether/2.19-20.html"
     },
     {
       "name": "LDS Scriptures: Ether 3:14-15",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_bofm_ether_314-15.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/ether/3.14-15?lang=eng.html",
+      "offlineAppend": "#13",
+      "offlinePath": "www.lds.org/scriptures/bofm/ether/3.14-15.html"
     },
     {
       "name": "LDS Scriptures: Ether 8:16",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_bofm_ether_816.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/ether/8.16?lang=eng.html",
+      "offlineAppend": "#15",
+      "offlinePath": "www.lds.org/scriptures/bofm/ether/8.16.html"
     },
     {
       "name": "LDS Scriptures: Exodus 12:12",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_ot_ex_1212.html"
+      "moveFromPath": "www.lds.org/scriptures/ot/ex/12.12?lang=eng.html",
+      "offlineAppend": "#11",
+      "offlinePath": "www.lds.org/scriptures/ot/ex/12.12.html"
     },
     {
       "name": "LDS Scriptures: Exodus 35:1-2",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_ot_ex_351-2.html"
+      "moveFromPath": "www.lds.org/scriptures/ot/ex/35.1-2?lang=eng.html",
+      "offlineAppend": "#1",
+      "offlinePath": "www.lds.org/scriptures/ot/ex/35.1-2.html"
     },
     {
       "name": "LDS Scriptures: Hel. 13-16",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_helaman.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/hel?lang=eng.html",
+      "offlineAppend": "#13",
+      "offlinePath": "www.lds.org/scriptures/bofm/hel.html"
     },
     {
       "name": "LDS Scriptures: Hymn \"Do What Is Right\"",
-      "moveFromPath": "",
-      "offlinePath": "do-what-is-right.html"
+      "moveFromPath": "www.lds.org/music/library/hymns/do-what-is-right?lang=eng.html",
+      "offlinePath": "www.lds.org/music/library/hymns/do-what-is-right.html"
     },
     {
       "name": "LDS Scriptures: JS-H 1:18",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_pgp_js-h_118.html"
+      "moveFromPath": "www.lds.org/scriptures/pgp/js-h/1.18?lang=eng.html",
+      "offlineAppend": "#17",
+      "offlinePath": "www.lds.org/scriptures/pgp/js-h/1.18.html"
     },
     {
       "name": "LDS Scriptures: JS-H 1:56-58",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_pgp_js-h_156-58.html"
+      "moveFromPath": "www.lds.org/scriptures/pgp/js-h/1.56-58?lang=eng.html",
+      "offlineAppend": "#55",
+      "offlinePath": "www.lds.org/scriptures/pgp/js-h/1.56-58.html"
     },
     {
       "name": "LDS Scriptures: JS-H 1:7",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_pgp_js-h_17.html"
+      "moveFromPath": "www.lds.org/scriptures/pgp/js-h/1.7?lang=eng.html",
+      "offlineAppend": "#6",
+      "offlinePath": "www.lds.org/scriptures/pgp/js-h/1.7.html"
     },
     {
       "name": "LDS Scriptures: JS-H 1",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_pgp_js-h_1.html"
+      "moveFromPath": "www.lds.org/scriptures/pgp/js-h/1?lang=eng.html",
+      "offlineAppend": "#1",
+      "offlinePath": "www.lds.org/scriptures/pgp/js-h/1.html"
     },
     {
       "name": "LDS Scriptures: JST Matt. 6:25-27",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_jst_jst-matt_6.html"
+      "moveFromPath": "www.lds.org/scriptures/jst/jst-matt/6?lang=eng.html",
+      "offlineAppend": "#1",
+      "offlinePath": "www.lds.org/scriptures/jst/jst-matt/6.html"
     },
     {
       "name": "LDS Scriptures: Jacob 2:30",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_bofm_jacob_230.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/jacob/2.30?lang=eng.html",
+      "offlineAppend": "#29",
+      "offlinePath": "www.lds.org/scriptures/bofm/jacob/2.30.html"
     },
     {
       "name": "LDS Scriptures: Judges 19:22-29",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_ot_judg_1922-29.html"
+      "moveFromPath": "www.lds.org/scriptures/ot/judg/19.22-29?lang=eng.html",
+      "offlineAppend": "#21",
+      "offlinePath": "www.lds.org/scriptures/ot/judg/19.22-29.html"
     },
     {
       "name": "LDS Scriptures: Matt. 6:25-27",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_nt_matt_625-27.html"
+      "moveFromPath": "www.lds.org/scriptures/nt/matt/6.25-27?lang=eng.html",
+      "offlineAppend": "#24",
+      "offlinePath": "www.lds.org/scriptures/nt/matt/6.25-27.html"
     },
     {
       "name": "LDS Scriptures: Mosiah 15:1-4",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_bofm_mosiah_151-4.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/mosiah/15.1-4?lang=eng.html",
+      "offlineAppend": "#1",
+      "offlinePath": "www.lds.org/scriptures/bofm/mosiah/15.1-4.html"
     },
     {
       "name": "LDS Scriptures: Mosiah 16:15",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_bofm_mosiah_1615.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/mosiah/16.15?lang=eng.html",
+      "offlineAppend": "#14",
+      "offlinePath": "www.lds.org/scriptures/bofm/mosiah/16.15.html"
     },
     {
       "name": "LDS Scriptures: Num. 21:5-9",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_ot_num_215-9.html"
+      "moveFromPath": "www.lds.org/scriptures/ot/num/21.5-9?lang=eng.html",
+      "offlineAppend": "#4",
+      "offlinePath": "www.lds.org/scriptures/ot/num/21.5-9.html"
     },
     {
       "name": "LDS Scriptures: Num. 31",
-      "moveFromPath": "",
-      "offlinePath": "scriptures_ot_num_31.html"
+      "moveFromPath": "www.lds.org/scriptures/ot/num/31?lang=eng.html",
+      "offlineAppend": "#1",
+      "offlinePath": "www.lds.org/scriptures/ot/num/31.html"
     },
     {
       "name": "LDS Scriptures: Official Declaration 2",
-      "moveFromPath": "",
-      "offlinePath": "official_declaration_2.html"
+      "moveFromPath": "www.lds.org/scriptures/dc-testament/od/2?lang=eng.html",
+      "offlinePath": "www.lds.org/scriptures/dc-testament/od/2.html"
     },
     {
       "name": "LDS Scriptures: Testimony of Eight Witnesses",
-      "moveFromPath": "",
-      "offlinePath": "testimony_of_eight_witnesses.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/eight?lang=eng.html",
+      "offlinePath": "www.lds.org/scriptures/bofm/eight.html"
     },
     {
       "name": "LDS Scriptures: Testimony of Three Witnesses",
-      "moveFromPath": "",
-      "offlinePath": "testimony_of_three_witnesses.html"
+      "moveFromPath": "www.lds.org/scriptures/bofm/three?lang=eng.html",
+      "offlinePath": "www.lds.org/scriptures/bofm/three.html"
     },
     {
       "name": "Link to Image of Shakers Dancing",
@@ -545,17 +599,20 @@
       "name": "Rough Stone Rolling p. 75",
       "overwriteUrl": "https://books.google.com/books?id=Mz3tpz4eRBQC&pg=PA75&lpg=PP1&focus=viewport&output=html_text",
       "moveFromPath": "books.google.com/books?id=Mz3tpz4eRBQC&pg=PA75&lpg=PP1&focus=viewport&output=html_text.html",
+      "reattempt": true,
       "offlinePath": "books.google.com/Mz3tpz4eRBQC_PA75.html"
     },
     {
       "name": "Teachings of the Presidents of the Church: Brigham Young Chapter 23",
       "moveFromPath": "www.lds.org/manual/teachings-brigham-young/chapter-23?lang=eng.html",
+      "offlineAppend": "#p15",
       "offlinePath": "www.lds.org/manual/teachings-brigham-young/chapter-23.html"
     },
     {
       "name": "The Mormon Delusions, Vol 3, pg. 235",
       "overwriteUrl": "https://books.google.com/books?id=7Dk993FxE5AC&pg=PA235&lpg=PA235&focus=viewport&output=html_text",
       "moveFromPath": "books.google.com/books?id=7Dk993FxE5AC&pg=PA235&lpg=PA235&focus=viewport&output=html_text.html",
+      "reattempt": true,
       "offlinePath": "books.google.com/7Dk993FxE5AC_PA235.html"
     },
     {
@@ -568,12 +625,14 @@
       "name": "An Address to All Believers in Christ, p.31",
       "overwriteUrl": "https://books.google.com/books?id=wVU3AAAAMAAJ&pg=PA31&hl=en&output=html_text",
       "moveFromPath": "books.google.com/books?id=wVU3AAAAMAAJ&pg=PA31&hl=en&output=html_text.html",
+      "reattempt": true,
       "offlinePath": "books.google.com/wVU3AAAAMAAJ_PA31.html"
     },
     {
       "name": "An Address to All Believers in Christ, pg. 27",
       "overwriteUrl": "https://books.google.com/books?id=wVU3AAAAMAAJ&pg=PA27&hl=en&output=html_text",
       "moveFromPath": "books.google.com/books?id=wVU3AAAAMAAJ&pg=PA27&hl=en&output=html_text.html",
+      "reattempt": true,
       "offlinePath": "books.google.com/wVU3AAAAMAAJ_PA27.html"
     },
     {
@@ -591,6 +650,8 @@
     },
     {
       "name": "Article: Talk to the All-Church Coordinating Council",
+      "overwriteUrl": "http://www.lds-mormon.com/face.shtml",
+      "moveFromPath": "www.lds-mormon.com/face.shtml.html",
       "offlinePath": "www.lds-mormon.com/face.html"
     },
     {
@@ -609,6 +670,7 @@
     {
       "name": "Book: Mormonism: Its Origin, Rise, and Progress",
       "overwriteUrl": "https://archive.org/stream/originriseprogre00tuck/originriseprogre00tuck_djvu.txt",
+      "offlineAppend": "#maincontent",
       "offlinePath": "archive.org/stream/originriseprogre00tuck/originriseprogre00tuck_djvu.txt.html"
     },
     {
@@ -622,16 +684,19 @@
     {
       "name": "Book: The First Book of Napoleon",
       "overwriteUrl": "https://archive.org/stream/firstbooknapole00gruagoog/firstbooknapole00gruagoog_djvu.txt",
+      "offlineAppend": "#maincontent",
       "offlinePath": "archive.org/stream/firstbooknapole00gruagoog/firstbooknapole00gruagoog_djvu.txt.html"
     },
     {
       "name": "Book: The Late War",
       "overwriteUrl": "https://archive.org/stream/latewarbetweenun00inhunt/latewarbetweenun00inhunt_djvu.txt",
+      "offlineAppend": "#maincontent",
       "offlinePath": "archive.org/stream/latewarbetweenun00inhunt/latewarbetweenun00inhunt_djvu.txt.html"
     },
     {
       "name": "Book: The Philosophy of the Future State",
       "overwriteUrl": "https://archive.org/stream/thephilosophyofa00dickuoft/thephilosophyofa00dickuoft_djvu.txt",
+      "offlineAppend": "#maincontent",
       "offlinePath": "archive.org/stream/thephilosophyofa00dickuoft/thephilosophyofa00dickuoft_djvu.txt.html"
     },
     {
@@ -657,10 +722,6 @@
     {
       "name": "CES Letter at the Crossroads",
       "offlinePath": "cesletter.com/ces-letter-at-the-crossroads.html"
-    },
-    {
-      "name": "Debunking Fairs Debunking",
-      "offlinePath": "cesletter.com/debunking-fairmormon/index.html"
     },
     {
       "name": "FAIR: 1949 First Presidency Statement",
@@ -745,14 +806,16 @@
     },
     {
       "name": "Larry King Live 1998 Interview",
-      "offlinePath": "www.entertainment4lds.com/Interviews/1/index.htm"
+      "overwriteUrl": "http://www.lds-mormon.com/lkl_00.shtml",
+      "moveFromPath": "www.lds-mormon.com/lkl_00.shtml.html",
+      "offlinePath": "www.lds-mormon.com/lkl_00.html"
     },
     {
       "name": "Lecture at the Veil",
-      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Adam%E2%80%93God_doctrine",
+      "overwriteUrl": "https://en.m.wikipedia.org/wiki/Adam–God_doctrine",
       "offlineAppend": "#Adam.E2.80.93God_in_Young.27s_later_administration",
-      "moveFromPath": "en.m.wikipedia.org/wiki/Adam\\342\\200\\223God_doctrine.html",
-      "offlinePath": "en.m.wikipedia.org/wiki/Adam-God_doctrine.html"
+      "moveFromPath": "en.m.wikipedia.org/wiki/Adam–God_doctrine.html",
+      "offlinePath": "en.m.wikipedia.org/wiki/Adam–God_doctrine.html"
     },
     {
       "name": "Mormon Infographics: Abraham Facsimile 1",
@@ -785,17 +848,20 @@
     {
       "name": "Mormonism: Its Origin, Rise, and Progress, p.17",
       "overwriteUrl": "https://archive.org/stream/originriseprogre00tuck/originriseprogre00tuck_djvu.txt",
+      "offlineAppend": "#maincontent",
       "offlinePath": "archive.org/stream/originriseprogre00tuck/originriseprogre00tuck_djvu.txt.html"
     },
     {
       "name": "Mormonism: Its Origin, Rise, and Progress, p.71",
       "overwriteUrl": "https://archive.org/stream/originriseprogre00tuck/originriseprogre00tuck_djvu.txt",
+      "offlineAppend": "#maincontent",
       "offlinePath": "archive.org/stream/originriseprogre00tuck/originriseprogre00tuck_djvu.txt.html"
     },
     {
       "name": "Origin and History of the Mormonites, p. 406",
       "overwriteUrl": "https://books.google.com/books?id=NXzQAAAAMAAJ&pg=PA406&hl=en&output=html_text",
       "moveFromPath": "books.google.com/books?id=NXzQAAAAMAAJ&pg=PA406&hl=en&output=html_text.html",
+      "reattempt": true,
       "offlinePath": "books.google.com/NXzQAAAAMAAJ_406.html"
     },
     {
@@ -805,15 +871,13 @@
     {
       "name": "The First Book of Napoleon, pg. 9",
       "overwriteUrl": "https://archive.org/stream/firstbooknapole00gruagoog/firstbooknapole00gruagoog_djvu.txt",
+      "offlineAppend": "#maincontent",
       "offlinePath": "archive.org/stream/firstbooknapole00gruagoog/firstbooknapole00gruagoog_djvu.txt.html"
-    },
-    {
-      "name": "The Journey",
-      "offlinePath": "20truths.info/mormon/story.html"
     },
     {
       "name": "The Late War, pg. 9",
       "overwriteUrl": "https://archive.org/stream/readercontain00hunt/readercontain00hunt_djvu.txt",
+      "offlineAppend": "#maincontent",
       "offlinePath": "archive.org/stream/readercontain00hunt/readercontain00hunt_djvu.txt.html"
     },
     {
@@ -881,7 +945,7 @@
     {
       "name": "Wikipedia: BOM and View of the Hebrews Controversy",
       "overwriteUrl": "https://en.m.wikipedia.org/wiki/Oliver_Cowdery",
-      "offlineAppend": "#View_of_the_Hebrews_controversy",
+      "offlineAppend": "#Cowdery_and_View_of_the_Hebrews",
       "offlinePath": "en.m.wikipedia.org/wiki/Oliver_Cowdery.html"
     },
     {
@@ -918,7 +982,7 @@
     {
       "name": "Wikipedia: Early Life of Joseph Smith",
       "overwriteUrl": "https://en.m.wikipedia.org/wiki/Early_life_of_Joseph_Smith",
-      "offlineAppend": "#Work_as_a_treasure_hunter_and_marriage_to_Emma_Hale",
+      "offlineAppend": "#Treasure_hunting",
       "offlinePath": "en.m.wikipedia.org/wiki/Early_life_of_Joseph_Smith.html"
     },
     {
@@ -946,7 +1010,7 @@
     {
       "name": "Wikipedia: Gladden Bishop",
       "overwriteUrl": "https://en.m.wikipedia.org/wiki/Gladden_Bishop",
-      "offlinePath": "wikipedia_Gen.m.wikipedia.org/wiki/Gladden_Bishopladden_Bishop.html"
+      "offlinePath": "en.m.wikipedia.org/wiki/Gladden_Bishop.html"
     },
     {
       "name": "Wikipedia: Homo genus",
@@ -978,7 +1042,7 @@
       "name": "Wikipedia: LDS Endowment - Nauvoo Endowment",
       "overwriteUrl": "https://en.m.wikipedia.org/wiki/Endowment_(Latter_Day_Saints)",
       "moveFromPath": "en.m.wikipedia.org/wiki/Endowment_(Latter_Day_Saints).html",
-      "offlineAppend": "#The_Nauvoo_Endowment",
+      "offlineAppend": "#The_Nauvoo_endowment",
       "offlinePath": "en.m.wikipedia.org/wiki/Endowment_Latter_Day_Saints.html"
     },
     {
@@ -1068,7 +1132,7 @@
       "name": "Wikipedia: Seer Stone",
       "overwriteUrl": "https://en.m.wikipedia.org/wiki/Seer_stone_(Latter_Day_Saints)",
       "moveFromPath": "en.m.wikipedia.org/wiki/Seer_stone_(Latter_Day_Saints).html",
-      "offlineAppend": "#Seer_Stones_and_the_Book_of_Mormon",
+      "offlineAppend": "#Seer_stones_and_the_Book_of_Mormon",
       "offlinePath": "en.m.wikipedia.org/wiki/Seer_stone_Latter_Day_Saints.html"
     },
     {
@@ -1096,7 +1160,7 @@
       "name": "Wikipedia: The Church of the Latter Day Saints Name and Legal Entities",
       "overwriteUrl": "https://en.m.wikipedia.org/wiki/The_Church_of_Jesus_Christ_of_Latter-day_Saints",
       "offlineAppend": "#Name_and_legal_entities",
-      "offlinePath": "en.m.wikipedia.org/wiki/The_Church_of_Jesus_Christ_of_Latter-day_Saints-day_Saints.html"
+      "offlinePath": "en.m.wikipedia.org/wiki/The_Church_of_Jesus_Christ_of_Latter-day_Saints.html"
     },
     {
       "name": "Wikipedia: Voree Plates",
@@ -1121,7 +1185,7 @@
     {
       "name": "Wikipedia: origin of the BOM: The View of the Hebrews Theory",
       "overwriteUrl": "https://en.m.wikipedia.org/wiki/Origin_of_the_Book_of_Mormon",
-      "offlineAppend": "#Smith_as_a_plagiarist_of_contemporaries:_the_View_of_the_Hebrews_theory",
+      "offlineAppend": "#View_of_the_Hebrews",
       "offlinePath": "en.m.wikipedia.org/wiki/Origin_of_the_Book_of_Mormon.html"
     },
     {
