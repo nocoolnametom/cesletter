@@ -1,8 +1,9 @@
 {
   "name": "cesletter",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Provides the Letter to a CES Director in a variety of useful formats",
   "main": "dist/js/export.js",
+  "style": "dist/css/cesletter.css",
   "jsnext:main": "src/js/export.js",
   "scripts": {
     "build": "npm run copy-images && npm run build-css && npm run build-html && npm run build-html-offline && npm run rollup && npm run rollup-export",
