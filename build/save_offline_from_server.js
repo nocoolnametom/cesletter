@@ -1,16 +1,15 @@
 /* @flow */
 /* eslint no-console:0 */
-const exec = require('child_process').exec;
-const execSync = require('child_process').execSync;
+const { exec, execSync } = require('child_process');
 const fs = require('fs');
-const paths = require('./utils/paths');
-const offlineLinks = require('./src/md/offline_links.json');
-const getLinksFromMarkdownList = require('./utils/getLinksFromMarkdownList');
-const addRepeats = require('./utils/addRepeats');
+const paths = require('../utils/paths');
+const getLinksFromMarkdownList = require('../utils/getLinksFromMarkdownList');
+const addRepeats = require('../utils/addRepeats');
+const offlineLinks = require('../src/md/offline_links.json');
 
-function downloadSimpleSites(links, sites, depthParam) {
-  const depth = depthParam || 0;
+const port = 1337;
 
+function downloadSimpleSitesViaProxy(links, sites) {
   sites.forEach((site, index) => {
     const url = site.overwriteUrl || (links.reduce((prev, link) => {
       if (link.name === site.name) {
@@ -19,7 +18,13 @@ function downloadSimpleSites(links, sites, depthParam) {
       return prev;
     }, false));
 
-    const wgetBaseOptions = [
+    const wgetCmd = [
+      'wget',
+      '-e use_proxy=yes',
+      `-e http_proxy=localhost:${port}`,
+      `-e https_proxy=localhost:${port}`,
+      '--ca-certificate=../../.http-mitm-proxy/certs/ca.pem',
+      '--ca-directory=../../.http-mitm-proxy/certs/',
       '--no-check-certificate',
       '--page-requisites',
       '--adjust-extension',
@@ -31,17 +36,12 @@ function downloadSimpleSites(links, sites, depthParam) {
       '--header="User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.11 '
         + '(KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11"',
       '--header="Referer: http://xmodulo.com/"',
+      `--header="CESLETTER-PATH: ${url.replace(/^([^\/]+)\/\/([^\/]+)/, '')}"`,
       '--timeout=50',
       '--quiet',
       '-e robots=off',
-    ];
-
-    const wgetOptions = depth ? wgetBaseOptions.concat([
-      '--recursive',
-      `--level=${depth}`,
-    ]) : wgetBaseOptions;
-
-    const wgetCmd = ['wget'].concat(wgetOptions).concat([`"${url}"`]).join(' ');
+      `"${url}"`,
+    ].join(' ');
 
     try {
       execSync(wgetCmd, {
@@ -63,7 +63,7 @@ function downloadSimpleSites(links, sites, depthParam) {
         execSync(mvCmd, { cwd: paths.offlineStorage });
       } catch (err) {
         if (err.error) {
-          console.log(err.error);
+          console.log(err.error, wgetCmd);
         }
       }
     }
@@ -72,27 +72,21 @@ function downloadSimpleSites(links, sites, depthParam) {
   });
 }
 
+
 fs.readFile(`${paths.markdownSource}links.md`, 'utf8', (err, data) => {
   if (err) {
     console.log(err);
   }
-
   exec(`mkdir -p ${paths.offlineStorage}`, () => {
     const cookiesFile = 'cookies.txt';
     exec(`touch ${cookiesFile}`, { cwd: paths.offlineStorage }, () => {
-      console.log('Starting simple sites...');
-      downloadSimpleSites(
+      const sites = addRepeats(offlineLinks.prerendered || []);
+      console.log('Starting prerendered sites...');
+      downloadSimpleSitesViaProxy(
         getLinksFromMarkdownList(data),
-        addRepeats(offlineLinks.wget || [])
+        sites
       );
-      console.log('Done with simple sites!');
-      console.log('Starting one-level sites...');
-      downloadSimpleSites(
-        getLinksFromMarkdownList(data),
-        addRepeats(offlineLinks.oneLevelDeepSites || []),
-        1
-      );
-      console.log('Done with one-level sites...');
+      console.log('Finished prerendered sites!');
     });
   });
 });

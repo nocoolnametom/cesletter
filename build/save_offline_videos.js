@@ -1,12 +1,12 @@
 /* @flow */
 /* eslint no-console:0 */
-const exec = require('child_process').exec;
+const { exec } = require('child_process');
 const crypto = require('crypto');
 const fs = require('fs');
-const paths = require('./utils/paths');
-const offlineLinks = require('./src/md/offline_links.json');
-const getLinksFromMarkdownList = require('./utils/getLinksFromMarkdownList');
-const addRepeats = require('./utils/addRepeats');
+const paths = require('../utils/paths');
+const offlineLinks = require('../src/md/offline_links.json');
+const getLinksFromMarkdownList = require('../utils/getLinksFromMarkdownList');
+const addRepeats = require('../utils/addRepeats');
 
 const youtubeDlExec = [
   'youtube-dl',

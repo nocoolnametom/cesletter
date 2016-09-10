@@ -1,14 +1,9 @@
-/* @flow */
-/* eslint no-var:0 */
-function forEachAll(
-  anArray/* : NodeList<*>|Array<any> */,
-  callback/* : Function */,
-  scope/* : any */
+export default function forEachAll(
+  anArray,
+  callback,
+  scope
 ) {
-  var i;
-  for (i = 0; i < anArray.length; i++) {
-    callback.call(scope, i, anArray[i]); // passes back stuff we need
+  for (let i = 0; i < anArray.length; i++) {
+    callback.call(scope, i, anArray[i]);
   }
 }
-
-module.exports = forEachAll;

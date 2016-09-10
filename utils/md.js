@@ -71,6 +71,7 @@ md.use(require('markdown-it-front-matter'), fm => console.log(fm))
   .use(require('markdown-it-link-attributes'), {
     target: '_blank',
     rel: 'noopener',
+    'data-offline-marker': 'cesletterLink',
   })
   .use(require('markdown-it-sup-alt'))
   .use(require('markdown-it-include'), paths.markdownSource);

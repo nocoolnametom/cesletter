@@ -1,9 +1,7 @@
-/* @flow */
-/* eslint no-var:0 */
-var forEachAll = require('./forEachAll');
+import forEachAll from './forEachAll';
 
 function alterTable(index, table) {
-  var headers = [];
+  const headers = [];
 
   forEachAll(table.querySelector('tr').children, (j, tr) => {
     headers.push(tr.innerHTML);
@@ -21,8 +19,6 @@ function alterTable(index, table) {
   });
 }
 
-function applyResponsiveTableClassNames() {
+export default function applyResponsiveTableClassNames() {
   forEachAll(document.querySelectorAll('table.responsive'), alterTable);
 }
-
-module.exports = applyResponsiveTableClassNames;
