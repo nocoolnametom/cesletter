@@ -1,7 +1,7 @@
 {
-    "markdownSource": "./src/md/",
-    "scssSource": "./src/scss/",
-    "htmlSource": "./src/html/",
-    "distribution": "./dist/",
-    "offlineStorage": "./dist/local/"
+    "markdownSource": "src/md/",
+    "scssSource": "src/scss/",
+    "htmlSource": "src/html/",
+    "distribution": "dist/",
+    "offlineStorage": "dist/local/"
 }

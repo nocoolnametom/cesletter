@@ -1,13 +1,14 @@
-/* @flow */
-/* eslint no-var:0 func-names:0 */
-var forEachAll = require('./forEachAll');
+/* global ActiveXObject */
+import forEachAll from './forEachAll';
 
 function getHead(sURL, sCallback, fCallback) {
-  var success = typeof sCallback === 'function' ? sCallback : function () {};
-  var failure = typeof fCallback === 'function' ? fCallback : function () {};
-  var oReq = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+  const success = typeof sCallback === 'function' ? sCallback : () => {};
+  const failure = typeof fCallback === 'function' ? fCallback : () => {};
+  const oReq = window.XMLHttpRequest
+    ? new XMLHttpRequest()
+    : new ActiveXObject('Microsoft.XMLHTTP');
   oReq.open('HEAD', sURL);
-  oReq.onreadystatechange = function () {
+  oReq.onreadystatechange = () => {
     if (oReq.readyState > 3) {
       if (oReq.status === 200) {
         return success();
@@ -19,12 +20,17 @@ function getHead(sURL, sCallback, fCallback) {
   oReq.send();
 }
 
-function ifOfflineTranslateBadLinks() {
-  getHead(document.querySelector('a[href]').href, function () {}, function () {
-    forEachAll(document.querySelectorAll('a[href]'), function(index, link) {
-      link.href = link.title || link.href; // eslint-disable-line no-param-reassign
-    });
+function translateBadLinks() {
+  forEachAll(document.querySelectorAll('a[data-offline-marker]'), (index, link) => {
+    link.href = link.title || link.href; // eslint-disable-line no-param-reassign
   });
 }
 
-module.exports = ifOfflineTranslateBadLinks;
+export default function ifOfflineTranslateBadLinks() {
+  const firstLink = document.querySelector('a[data-offline-marker]');
+  if (firstLink && firstLink instanceof HTMLAnchorElement) {
+    getHead(firstLink.href, () => {}, translateBadLinks);
+  } else {
+    translateBadLinks();
+  }
+}

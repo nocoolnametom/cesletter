@@ -1,8 +1,8 @@
 /* @flow */
 /* eslint func-names:0 no-console:0 */
 const phantom = require('phantom'); // eslint-disable-line import/no-extraneous-dependencies
-const fork = require('child_process').fork;
-const paths = require('./utils/paths');
+const { fork } = require('child_process');
+const paths = require('../utils/paths');
 const mitmProxy =
   require('http-mitm-proxy'); // eslint-disable-line import/no-extraneous-dependencies
 

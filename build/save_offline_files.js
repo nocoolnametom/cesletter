@@ -1,11 +1,11 @@
 /* @flow */
 /* eslint no-console:0 */
-const exec = require('child_process').exec;
+const { exec } = require('child_process');
 const fs = require('fs');
-const paths = require('./utils/paths');
-const getLinksFromMarkdownList = require('./utils/getLinksFromMarkdownList');
-const addRepeats = require('./utils/addRepeats');
-const offlineLinks = require('./src/md/offline_links.json');
+const paths = require('../utils/paths');
+const getLinksFromMarkdownList = require('../utils/getLinksFromMarkdownList');
+const addRepeats = require('../utils/addRepeats');
+const offlineLinks = require('../src/md/offline_links.json');
 
 function downloadFiles(links, files) {
   let count = 0;
