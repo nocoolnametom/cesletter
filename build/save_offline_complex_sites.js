@@ -132,7 +132,7 @@ proxy.listen({
 }, () => {
   console.log('Stared proxy!');
   setTimeout(() => {
-    const saving = fork('save_offline_from_server.js');
+    const saving = fork('build/save_offline_from_server.js');
     saving.on('close', () => {
       console.log('Stopping proxy...');
       proxy.close();
